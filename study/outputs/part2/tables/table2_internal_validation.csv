@@ -1,0 +1,29 @@
+model,metric,apparent,optimism_corrected,oob_mean,estimate_632plus,bootstrap_models_lower,bootstrap_models_upper
+Logistic regression,AUROC,0.8559,0.8533,0.8514,0.853,0.8531,0.8551
+Logistic regression,Calibration slope,1.0012,0.985,0.9674,,0.9586,1.0132
+Logistic regression,Calibration-in-the-large,-0.0008,-0.0001,-0.0001,,-0.0353,0.0337
+Logistic regression,Observed/expected,0.9994,1.0,1.0003,,0.976,1.0234
+Logistic regression,Integrated calibration index,0.013,0.0135,0.0137,,0.0121,0.014
+Logistic regression,Brier score,0.0693,0.0698,0.0701,0.0698,0.0694,0.0697
+Logistic regression,Scaled Brier score,0.2108,0.2048,0.2019,,0.2061,0.2095
+Ridge logistic regression,AUROC,0.8559,0.8535,0.852,0.8534,0.8535,0.8553
+Ridge logistic regression,Calibration slope,1.0145,0.9991,0.9849,,0.9723,1.0246
+Ridge logistic regression,Calibration-in-the-large,0.0006,-0.0003,-0.0035,,-0.0361,0.0358
+Ridge logistic regression,Observed/expected,1.0004,0.9999,0.998,,0.9754,1.0254
+Ridge logistic regression,Integrated calibration index,0.0132,0.0135,0.0137,,0.0122,0.0145
+Ridge logistic regression,Brier score,0.0693,0.0698,0.0699,0.0697,0.0694,0.0697
+Ridge logistic regression,Scaled Brier score,0.2108,0.2053,0.2024,,0.2065,0.2095
+Random forest,AUROC,0.9549,0.9128,0.8716,0.8985,0.9327,0.938
+Random forest,Calibration slope,2.686,1.4874,1.457,,2.1024,2.2944
+Random forest,Calibration-in-the-large,-0.0039,-0.002,-0.0029,,-0.0362,0.0272
+Random forest,Observed/expected,0.997,0.9984,0.9981,,0.973,1.021
+Random forest,Integrated calibration index,0.0609,0.0386,0.0245,,0.0487,0.0541
+Random forest,Brier score,0.0565,0.066,0.0685,0.065,0.0575,0.0583
+Random forest,Scaled Brier score,0.3564,0.2485,0.2194,,0.3361,0.3451
+Gradient boosting,AUROC,0.9352,0.8999,0.8794,0.8982,0.9215,0.9254
+Gradient boosting,Calibration slope,1.4938,1.0205,0.9952,,1.2767,1.3653
+Gradient boosting,Calibration-in-the-large,0.0005,0.037,0.0667,,0.0027,0.0793
+Gradient boosting,Observed/expected,1.0003,1.0242,1.0454,,1.0018,1.0525
+Gradient boosting,Integrated calibration index,0.0275,0.0081,0.0095,,0.0171,0.0214
+Gradient boosting,Brier score,0.0507,0.0618,0.0656,0.061,0.0528,0.0536
+Gradient boosting,Scaled Brier score,0.4227,0.2959,0.2536,,0.3902,0.3992

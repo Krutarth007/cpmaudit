@@ -1,0 +1,9 @@
+model,n,pool_fraction,disjoint_samples,rms_sd_disjoint,rms_sd_overlapping_corrected,ratio
+Logistic regression,4000,0.12511,4,0.05409,0.05202,0.96168
+Ridge logistic regression,4000,0.12511,4,0.03905,0.03879,0.99333
+Random forest,4000,0.12511,4,0.02137,0.02277,1.06557
+Gradient boosting,4000,0.12511,4,0.07659,0.07832,1.0225
+Logistic regression,8000,0.25021,3,0.03986,0.03848,0.96542
+Ridge logistic regression,8000,0.25021,3,0.03311,0.0308,0.93024
+Random forest,8000,0.25021,3,0.0207,0.02089,1.00935
+Gradient boosting,8000,0.25021,3,0.0625,0.06821,1.09144

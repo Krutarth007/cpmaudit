@@ -1,0 +1,399 @@
+{
+  "notebook": "part2_development_instability",
+  "started_utc": "2026-11-20T14:21:17+00:00",
+  "finished_utc": "2026-11-20T15:10:28+00:00",
+  "environment": {
+    "python": "3.11.5",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu_count": 14,
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "cpmaudit": "0.1.0"
+  },
+  "steps": [
+    {
+      "step": "Full-sample audit: Logistic regression",
+      "seconds": 0.3
+    },
+    {
+      "step": "Full-sample audit: Ridge logistic regression",
+      "seconds": 0.3
+    },
+    {
+      "step": "Full-sample audit: Random forest",
+      "seconds": 0.3
+    },
+    {
+      "step": "Full-sample audit: Gradient boosting",
+      "seconds": 0.3
+    },
+    {
+      "step": "Multiverse experiment",
+      "seconds": 2562.2
+    }
+  ],
+  "files": [
+    {
+      "file": "outputs\\part2\\tables\\table_p2_model_specification.csv",
+      "kind": "table",
+      "description": "Model classes, preprocessing and hyperparameters",
+      "sha256": "17ef96c3e929bf3be085fdea15eb819ddfe0f7ab79725610d4cdae2b8108230f",
+      "chain_sha256": "f1165bb193acbd2b1b932d0978e70d2a6d660f6c1ee4e0ff72be3aef382aba4f",
+      "bytes": 674
+    },
+    {
+      "file": "outputs\\part2\\tables\\table2_internal_validation.csv",
+      "kind": "table",
+      "description": "Apparent, optimism-corrected, OOB and .632+ performance by model class",
+      "sha256": "b99c5e42c5d57177b2baafcc7365dcfebcf0227398aea92be1c2e4dfaba54803",
+      "chain_sha256": "101d09f171f96513320b01f4c5e8e7f14a0a10c16406427be1a9d8ebe398d142",
+      "bytes": 2242
+    },
+    {
+      "file": "outputs\\part2\\tables\\table3_instability_full_sample.csv",
+      "kind": "table",
+      "description": "Instability measures at the full development size",
+      "sha256": "3c978b41a82c6afddc3ab48f03e07abbb5c578b7205452f2ef8c190b01b60706",
+      "chain_sha256": "69ef76b47567ccc31860e0a995ed50f2a9a25f78068683bafe7e4095c9749e5e",
+      "bytes": 2763
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_level2_distribution.csv",
+      "kind": "table",
+      "description": "Level 2: stability of the distribution of predicted risks",
+      "sha256": "9c7e0880b6eac76299138b044f6750f5ea4615d96243ebf7b7ecdba0011a2237",
+      "chain_sha256": "b6d06ea6780e4a26328a3dd49ec68d2ca993e1a83cd5784b8644c7358c0f691f",
+      "bytes": 2198
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig2_prediction_instability.png",
+      "kind": "figure-png",
+      "description": "Prediction instability plots at the full development size, four model classes",
+      "sha256": "6a12db802127d3cb48abb4880cdc1b3ec09302da09849b643053c7e6247833ee",
+      "chain_sha256": "5097e301753f7e0034579ef4c03516d59e9acd0e34906c66c7d3b6441abb3faa",
+      "bytes": 1982936
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig2_prediction_instability.pdf",
+      "kind": "figure-pdf",
+      "description": "Prediction instability plots at the full development size, four model classes",
+      "sha256": "398c6266a6b0c611707409b0343b8c5631d0557d4d2e6ea6189e60103c7280f2",
+      "chain_sha256": "9a6f26c8e7ad153cd825154cdb0cb18dc2587c8a649631db8d6073a728fe6a91",
+      "bytes": 720234
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig3_where_instability_lives.png",
+      "kind": "figure-png",
+      "description": "Instability by risk level and decision instability at three thresholds",
+      "sha256": "aecb0cf0b43226ccdfd382bf8fcd3420d11724dbcb7861b08cc77750f6a9675b",
+      "chain_sha256": "3479f15e9e3aaa9440d3fa2f0bf1c3f1da46af1417f5f05519ac0233e5319bb0",
+      "bytes": 342449
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig3_where_instability_lives.pdf",
+      "kind": "figure-pdf",
+      "description": "Instability by risk level and decision instability at three thresholds",
+      "sha256": "05a6f9dfe5143da60b5dde733a1315ecbfb747a94253c219d2e7245faa860095",
+      "chain_sha256": "dcee6488721ef3b11b3c5aeee8bccd54a6c203ce63b510f5285e4e2edc000a6f",
+      "bytes": 43203
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig4_population_vs_individual.png",
+      "kind": "figure-png",
+      "description": "Bootstrap AUROC versus individual interval width",
+      "sha256": "a66ffb709d41ae5d85aeb10db35f9d7f0928bde7137059fd0f7d516c171a7225",
+      "chain_sha256": "b37ecc7bf88b09424b8c22f3c5d5a90770879d17731cd34a530023b0b84287b4",
+      "bytes": 292760
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig4_population_vs_individual.pdf",
+      "kind": "figure-pdf",
+      "description": "Bootstrap AUROC versus individual interval width",
+      "sha256": "2ab5b6bed9d2e01e0b31c766790932909dbb7d89ff001be0228e4ea40d491c30",
+      "chain_sha256": "41a1f20c9733318a78b74ad3883a66e124911902c63a25c23247fa8c3c743c56",
+      "bytes": 121695
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_figS1_calibration_instability.png",
+      "kind": "figure-png",
+      "description": "Calibration instability plots, bootstrap models in the development sample",
+      "sha256": "5e40804f53f16ff2932ed17a4a7876e941dd5abab1d1438ad504cc2627315838",
+      "chain_sha256": "3f9a6ff794afd84b228ab560ffa22e01586d71e0d1ca3e926a74a00ee4759271",
+      "bytes": 699078
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_figS1_calibration_instability.pdf",
+      "kind": "figure-pdf",
+      "description": "Calibration instability plots, bootstrap models in the development sample",
+      "sha256": "84f8c6429e36b0e532180ee241a62928233e7f71d660d67be6859fe230564ffc",
+      "chain_sha256": "eae327c45a1796e85f951c0de517a30213798a3efe85f63d8848cdccbb51395c",
+      "bytes": 524970
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_figS2_decision_curve_instability.png",
+      "kind": "figure-png",
+      "description": "Decision-curve instability, bootstrap models in the development sample",
+      "sha256": "2add96f06d532f47e412976837f5b4f104a97449c1cd32a867055bae966ffdc0",
+      "chain_sha256": "30b31e1a94c40c556afe10e903f821e601bf2c013fdd68cf0d926a10f0ec91b5",
+      "bytes": 488587
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_figS2_decision_curve_instability.pdf",
+      "kind": "figure-pdf",
+      "description": "Decision-curve instability, bootstrap models in the development sample",
+      "sha256": "cf818bd0f89595ab9cc95a79e96feb83881ddbc95839b38e4cf40c053e4da37b",
+      "chain_sha256": "73645b7a8474aab09e6d39221f700163d7bdf685e48222a32778c4a1821dd1c5",
+      "bytes": 269664
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_equation_lr.csv",
+      "kind": "table",
+      "description": "Full model equation, Logistic regression",
+      "sha256": "b63c102da32974ad68980bc3cba33e3fe57e5bdfdf235d0844bb9aabe0fc96d4",
+      "chain_sha256": "926a5e731ef4eb5562e08cf7e85a367489f6b919c0deb2c1c820ed0679b71d02",
+      "bytes": 7399
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_equation_ridge.csv",
+      "kind": "table",
+      "description": "Full model equation, Ridge logistic regression",
+      "sha256": "a35cc4ca7c8811066404c77ec9946dd0ae6c25934fec24366284db25d537bee1",
+      "chain_sha256": "bdf5a9cc6aa9dff57b16dcd2aff279f62ff96b3d8623b05c1f3e0ea460f55794",
+      "bytes": 7402
+    },
+    {
+      "file": "outputs\\part2\\tables\\table4_subgroup_instability_full.csv",
+      "kind": "table",
+      "description": "Subgroup instability at the full development size: MAPE, risk-standardised ratio, decision changes",
+      "sha256": "9a2737f0ee80ff6be66f62632c37f6a5284a63472e721f1989560b82b48bdd8b",
+      "chain_sha256": "6ceb9218c95b40ea5e00f0e0dd41adcfc105a4f953567e05fe8820dc94d46752",
+      "bytes": 11364
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig5_subgroup_instability.png",
+      "kind": "figure-png",
+      "description": "Instability by subgroup and risk-standardised instability ratio, full development size",
+      "sha256": "ebe2f160780bc6e72701f20bebcd202f1fd71eb03d3ef29d58b8acc04e73ea1f",
+      "chain_sha256": "a92891905152a0cf796f94ea78aeaa046ced28b392479a5ecc2116694d9a9a0e",
+      "bytes": 285039
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig5_subgroup_instability.pdf",
+      "kind": "figure-pdf",
+      "description": "Instability by subgroup and risk-standardised instability ratio, full development size",
+      "sha256": "90c89660eeb5735b6db3ea5542ad138e03fcff93f1875c2dc99e36e20dadbe1d",
+      "chain_sha256": "ea4b629be4440b6b6563532a59820e38a3cf8564aa054fa4e0e08a44b9f4b041",
+      "bytes": 34212
+    },
+    {
+      "file": "outputs\\part2\\data\\multiverse_design_01fb9742.json",
+      "kind": "json",
+      "description": "Audit panel, eICU-CRD panel and sizes of the multiverse experiment",
+      "sha256": "e76418e293e98f82d54a7a0de8ba77bb39cca697d4ef62d4abeff3c6733a1e40",
+      "chain_sha256": "d7550ee64947df00e39d527576ea60d8b761a034c362f9301fb70e0c8bfba019",
+      "bytes": 395963
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig1_design.png",
+      "kind": "figure-png",
+      "description": "Design of the full-sample audit and the multiverse experiment",
+      "sha256": "7f77e67c8bda4f5dee87632dc214780c177cd3d550d72d987fa0bd04f7c51db8",
+      "chain_sha256": "4ade1d3e5212e051230495ce086b2cd7f8317db412fcf38bc21f2c4282e7f353",
+      "bytes": 258246
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig1_design.pdf",
+      "kind": "figure-pdf",
+      "description": "Design of the full-sample audit and the multiverse experiment",
+      "sha256": "e794e81197b3aa5710cd0aba0221ea1c1c0aa53cfcb2891f03a55ae2cbe8cf7b",
+      "chain_sha256": "87c7901b6e9eea5aef422cca0a429aab26e7808fcf63660aa9b460af921a8d3d",
+      "bytes": 45319
+    },
+    {
+      "file": "outputs\\part2\\tables\\table5_multiverse_population_summary.csv",
+      "kind": "table",
+      "description": "Population-level instability by model, size and estimator (truth, bootstrap variants, analytic)",
+      "sha256": "9f8595b4ba9ecd5668146478cfe5f74a14703a6c0420927d23fa6bb0580c9399",
+      "chain_sha256": "4d7b1d1e49b542f33ce4442d567bc38086f52fb1d9d8eac38c80c86e15f4c0be",
+      "bytes": 79876
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_multiverse_performance.csv",
+      "kind": "table",
+      "description": "Audit-panel performance of every independently developed model",
+      "sha256": "848f0d8eca69198d5664fbae41e20286d487f5252d95b79f069d9c3e8827772e",
+      "chain_sha256": "4d7f271781989d09e5c0ae36399319acc367d02725600eada7e1852bdabab740",
+      "bytes": 44142
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_fpc_check.csv",
+      "kind": "table",
+      "description": "Finite-population correction checked against disjoint development samples",
+      "sha256": "fae66f68ff2bae3867a8a7ba14079d979705e797576c527c6e53b7c0f468ac27",
+      "chain_sha256": "2eb034d916e7f5f44f6662ea413fdc5afd405696945cba063c61b3aff87e6779",
+      "bytes": 563
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig6_instability_by_sample_size.png",
+      "kind": "figure-png",
+      "description": "True instability, decision instability and AUROC across development sizes",
+      "sha256": "b78bd0bcb2596b2fcec007b64a5fbd3cc54cb328ec33ef7729f33d60a760485e",
+      "chain_sha256": "5015523e7a9713bec32a6128e97993bd6a59b758d28bd3e12114de48e684ec4f",
+      "bytes": 505881
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig6_instability_by_sample_size.pdf",
+      "kind": "figure-pdf",
+      "description": "True instability, decision instability and AUROC across development sizes",
+      "sha256": "e01bf2c734651e8667cdf95d258e2d67cef49065bff2f817b61b76f223b1b450",
+      "chain_sha256": "dbf8cc48cc1cdb1808607fc7f595cd68211c0fa949f2bba4ef3aa5262522ac2a",
+      "bytes": 30310
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig7_estimator_accuracy.png",
+      "kind": "figure-png",
+      "description": "Accuracy of instability estimators against independent-sample truth",
+      "sha256": "ff53227fb9a123493c5666a18a725ed7511d27df119a7c0fa8fa756ec8ace0a8",
+      "chain_sha256": "ce5f5b935c0ecafccc697d35596faa5686f4098329087e8231f56fc2e8126764",
+      "bytes": 509327
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig7_estimator_accuracy.pdf",
+      "kind": "figure-pdf",
+      "description": "Accuracy of instability estimators against independent-sample truth",
+      "sha256": "47ea90e051946da670d88b41923bd6f24cb5563793a473702482c51aa02c2079",
+      "chain_sha256": "f04f395c1d7977d270d702090b8ca6eaf80a5a9404ca6953a746ae914a6ff104",
+      "bytes": 53556
+    },
+    {
+      "file": "outputs\\part2\\tables\\table6_estimator_accuracy.csv",
+      "kind": "table",
+      "description": "Estimated versus true instability: ratio of instability index and difference in decision-unstable share",
+      "sha256": "2e0e2c5881273446fb592198d6263012b878a0b45e52cc481a6ad2eb1cd6bf63",
+      "chain_sha256": "b3676228f84a6619265e3374ec12f2cb2a8fe4c499026e5cd1039529ff2aea6e",
+      "bytes": 10118
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig8_patient_level_agreement.png",
+      "kind": "figure-png",
+      "description": "Patient-level agreement between bootstrap-estimated and true instability",
+      "sha256": "1dd88644cf63971410fd26b784c0297b72265ac1518d6ada5660b5fb7582f977",
+      "chain_sha256": "5a3c84957d73f2717e5cc0710102b5e1c4e6cfc68bdc50d9fae0946e934aea21",
+      "bytes": 895928
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig8_patient_level_agreement.pdf",
+      "kind": "figure-pdf",
+      "description": "Patient-level agreement between bootstrap-estimated and true instability",
+      "sha256": "3fe8d35ba305d4ee955acf1c80d58c5f7d941c871cbaf5145bd02984adfa99da",
+      "chain_sha256": "21aa5f865ef965fbdc466fe82d8e36029b0a9a283daca8624d29c80c560b4e73",
+      "bytes": 365989
+    },
+    {
+      "file": "outputs\\part2\\tables\\table7_flagging_accuracy.csv",
+      "kind": "table",
+      "description": "Accuracy of bootstrap flags for truly decision-unstable patients",
+      "sha256": "87985278d15f6f39e2f64c95cdd36b796c4a404e5742900b1850064fd2bd38a2",
+      "chain_sha256": "a6cfcdaed361deb216beb82929cab11afb9e9e0023da41450c405ef996c587c2",
+      "bytes": 1737
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig9_exemplar_patients.png",
+      "kind": "figure-png",
+      "description": "Range of risks six patients would receive from independently developed models",
+      "sha256": "98660cea4330365aed957eca597245506956f04221ec57bd72a4ebdc8f77e49e",
+      "chain_sha256": "37a4bef3d3d53449ea00cf7bb2d1ab1ef11c29249a9a463717fae5e88980e259",
+      "bytes": 460060
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig9_exemplar_patients.pdf",
+      "kind": "figure-pdf",
+      "description": "Range of risks six patients would receive from independently developed models",
+      "sha256": "eb18c6dc7ce6e2159b5342fb67d8c1ac208d7ea64e1dab60e7c50d8a6edb70e2",
+      "chain_sha256": "901579df1100e511b4dd0e84a549aa9f1c7075be5646de8912d778e5f460239d",
+      "bytes": 31200
+    },
+    {
+      "file": "outputs\\part2\\tables\\tableS_p2_equity_by_size.csv",
+      "kind": "table",
+      "description": "Risk-standardised instability ratio by subgroup, model and development size",
+      "sha256": "c235bed1b6cbaf8d21763e46949039cf6a88331f49a58abb49458cf77587241f",
+      "chain_sha256": "b52d0f5195c2648f0c12496957540c9b493fc8cc541e4f64a001b878aa228151",
+      "bytes": 36406
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig10_equity_by_sample_size.png",
+      "kind": "figure-png",
+      "description": "Risk-standardised instability ratio by subgroup and development size",
+      "sha256": "3a1131093050df4ad03f4953d4861f5fe8b3dbdbd0da9fcac31754cade1cb5b4",
+      "chain_sha256": "23e31f380bfbbd645030b77144432ef60ffaf8078d6ebda77b12166f2d088b4f",
+      "bytes": 965840
+    },
+    {
+      "file": "outputs\\part2\\figures\\p2_fig10_equity_by_sample_size.pdf",
+      "kind": "figure-pdf",
+      "description": "Risk-standardised instability ratio by subgroup and development size",
+      "sha256": "dff9533a8e5b2190b81b82948b3cdd18214cf91d8ca9236f775c36376034f51f",
+      "chain_sha256": "7fef60eb97e808d46e377391cc92a46cdce4a8cba2588b1701307da95b0fee76",
+      "bytes": 72554
+    },
+    {
+      "file": "outputs\\part2\\tables\\table8_sample_size_for_stability.csv",
+      "kind": "table",
+      "description": "Sample size needed for individual-level and decision-level stability versus the analytic minimum",
+      "sha256": "f11b89ed7a83da3feccb04ed977749e9143c52b447b13015c1063a2b57e2665c",
+      "chain_sha256": "b2337a9f65623910b82bd339e71b80f3eb2a62ef9579c56aaddb111ed74b4090",
+      "bytes": 1012
+    },
+    {
+      "file": "outputs\\part2\\data\\part2_summary.json",
+      "kind": "json",
+      "description": "Settings, file locations and headline results for notebook 3",
+      "sha256": "f3b5ce584f5951a3dd02e90760663ba41b3fea71e8e71e31e3a4645a5b4e9be6",
+      "chain_sha256": "37bb5cee362d8a6b6c21ed3ba31f3aaec31d3919661dc5d138942063b2898bf2",
+      "bytes": 8085
+    }
+  ],
+  "final_chain_sha256": "37bb5cee362d8a6b6c21ed3ba31f3aaec31d3919661dc5d138942063b2898bf2",
+  "config": {
+    "preset": "full",
+    "seed": 20261121,
+    "models": [
+      "lr",
+      "ridge",
+      "rf",
+      "hgb"
+    ],
+    "thresholds": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "primary_threshold": 0.1,
+    "unstable_share": 0.1,
+    "wide_interval": 0.1,
+    "b_full": 200,
+    "k_truth": 30,
+    "r_boot": 5,
+    "b_curve": 100,
+    "chunk": 10,
+    "audit_fraction": 0.2,
+    "audit_max": 8000,
+    "ext_panel": 20000,
+    "base_sizes": [
+      500,
+      1000,
+      2000,
+      4000,
+      8000,
+      16000
+    ],
+    "fpc_max_fraction": 0.55,
+    "n_jobs": 13,
+    "project_dir": "C:\\Users\\kruta\\Downloads",
+    "force": false
+  }
+}

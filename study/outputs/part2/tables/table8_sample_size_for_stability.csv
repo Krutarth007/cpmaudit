@@ -1,0 +1,6 @@
+model,analytic_minimum_n,source,decay_exponent,decay_exponent_lower,decay_exponent_upper,T1_n,T1_method,T1_times_minimum,T2_n,T2_method,T2_times_minimum,T3_n,T3_method,T3_times_minimum
+Logistic regression,3906,independent samples,0.523,0.477,0.57,30240.585,extrapolated,7.742,48864.975,extrapolated,12.51,121130.662,extrapolated,31.011
+Ridge logistic regression,3906,independent samples,0.278,0.201,0.355,27100.228,extrapolated,6.938,54270.497,extrapolated,13.894,137556.198,extrapolated,35.217
+Random forest,3906,independent samples,0.114,0.083,0.145,111862.805,extrapolated,28.639,127589.418,extrapolated,32.665,,"beyond 1,000,000 (extrapolation not reliable)",
+Gradient boosting,3906,independent samples,0.14,0.113,0.168,,"beyond 1,000,000 (extrapolation not reliable)",,,"beyond 1,000,000 (extrapolation not reliable)",,,"beyond 1,000,000 (extrapolation not reliable)",
+Logistic regression,3906,analytic (Fisher information),0.5,,,26631.0,analytic,6.818,42677.0,analytic,10.926,99244.0,analytic,25.408

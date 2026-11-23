@@ -1,0 +1,5 @@
+model,preprocessing,estimator,tuning
+Logistic regression,"median imputation, grouped missingness indicators, standardisation","LogisticRegression, no penalty",none
+Ridge logistic regression,as logistic regression,"LogisticRegressionCV, L2","C over 13 values 1e-4 to 1e2, 5-fold CV, log loss, inside every fit"
+Random forest,"median imputation, grouped missingness indicators","RandomForestClassifier: 300 trees, min_samples_leaf 20, max_features sqrt",fixed in advance
+Gradient boosting,none (native missing-value handling),"HistGradientBoostingClassifier: 300 iterations, learning rate 0.05, 15 leaves, min_samples_leaf 50, L2 1.0",fixed in advance; no early stopping

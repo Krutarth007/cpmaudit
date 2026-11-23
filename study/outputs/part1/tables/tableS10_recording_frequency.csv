@@ -1,0 +1,47 @@
+feature,median_valid_per_stay,median_hours_with_data,database,label,domain
+albumin,1.0,,MIMIC-IV,Albumin,lab
+bicarbonate,2.0,,MIMIC-IV,Bicarbonate,lab
+bilirubin,1.0,,MIMIC-IV,Total bilirubin,lab
+bun,2.0,,MIMIC-IV,Blood urea nitrogen,lab
+chloride,2.0,,MIMIC-IV,Chloride,lab
+creatinine,2.0,,MIMIC-IV,Creatinine,lab
+dbp,26.0,23.0,MIMIC-IV,Diastolic blood pressure,vital
+gcs_motor,6.0,,MIMIC-IV,GCS motor component,neuro
+gcs_total,5.0,,MIMIC-IV,GCS total (verbal assessable),neuro
+glucose,2.0,,MIMIC-IV,Glucose (laboratory),lab
+heart_rate,26.0,23.0,MIMIC-IV,Heart rate,vital
+hemoglobin,3.0,,MIMIC-IV,Haemoglobin,lab
+inr,2.0,,MIMIC-IV,International normalised ratio,lab
+lactate,3.0,,MIMIC-IV,Lactate,lab
+mbp,26.0,23.0,MIMIC-IV,Mean arterial pressure,vital
+platelets,3.0,,MIMIC-IV,Platelet count,lab
+potassium,2.0,,MIMIC-IV,Potassium,lab
+resp_rate,28.0,23.0,MIMIC-IV,Respiratory rate,vital
+sbp,26.0,23.0,MIMIC-IV,Systolic blood pressure,vital
+sodium,2.0,,MIMIC-IV,Sodium,lab
+spo2,26.0,23.0,MIMIC-IV,Peripheral oxygen saturation,vital
+temperature,7.0,7.0,MIMIC-IV,Temperature,vital
+wbc,2.0,,MIMIC-IV,White cell count,lab
+albumin,1.0,,eICU-CRD,Albumin,lab
+bicarbonate,2.0,,eICU-CRD,Bicarbonate,lab
+bilirubin,1.0,,eICU-CRD,Total bilirubin,lab
+bun,2.0,,eICU-CRD,Blood urea nitrogen,lab
+chloride,2.0,,eICU-CRD,Chloride,lab
+creatinine,2.0,,eICU-CRD,Creatinine,lab
+dbp,62.0,24.0,eICU-CRD,Diastolic blood pressure,vital
+gcs_motor,5.0,,eICU-CRD,GCS motor component,neuro
+gcs_total,5.0,,eICU-CRD,GCS total (verbal assessable),neuro
+glucose,2.0,,eICU-CRD,Glucose (laboratory),lab
+heart_rate,284.0,24.0,eICU-CRD,Heart rate,vital
+hemoglobin,2.0,,eICU-CRD,Haemoglobin,lab
+inr,1.0,,eICU-CRD,International normalised ratio,lab
+lactate,2.0,,eICU-CRD,Lactate,lab
+mbp,62.0,24.0,eICU-CRD,Mean arterial pressure,vital
+platelets,2.0,,eICU-CRD,Platelet count,lab
+potassium,2.0,,eICU-CRD,Potassium,lab
+resp_rate,280.0,24.0,eICU-CRD,Respiratory rate,vital
+sbp,62.0,24.0,eICU-CRD,Systolic blood pressure,vital
+sodium,2.0,,eICU-CRD,Sodium,lab
+spo2,276.0,24.0,eICU-CRD,Peripheral oxygen saturation,vital
+temperature,6.0,6.0,eICU-CRD,Temperature,vital
+wbc,2.0,,eICU-CRD,White cell count,lab

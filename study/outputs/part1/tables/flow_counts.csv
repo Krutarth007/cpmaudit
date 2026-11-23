@@ -1,0 +1,15 @@
+step,exclusion,excluded,remaining,database
+All ICU stays,,0,73181,MIMIC-IV
+Aged 18 years or older,Age under 18 or unknown,0,73181,MIMIC-IV
+First ICU stay of the patient,Subsequent ICU stays,22261,50920,MIMIC-IV
+ICU stay of 24 h or longer,ICU stay shorter than 24 h,10753,40167,MIMIC-IV
+Alive at the 24-h landmark,Died in hospital before the landmark,135,40032,MIMIC-IV
+Hospital outcome known,Unknown hospital outcome,0,40032,MIMIC-IV
+Valid heart rate in first 24 h,No valid heart-rate measurement,66,39966,MIMIC-IV
+All ICU stays,,0,200859,eICU-CRD
+Aged 18 years or older,Age under 18 or unknown,625,200234,eICU-CRD
+First ICU stay of the patient,Subsequent ICU stays,61382,138852,eICU-CRD
+ICU stay of 24 h or longer,ICU stay shorter than 24 h,42379,96473,eICU-CRD
+Alive at the 24-h landmark,Died in hospital before the landmark,23,96450,eICU-CRD
+Hospital outcome known,Unknown hospital outcome,894,95556,eICU-CRD
+Valid heart rate in first 24 h,No valid heart-rate measurement,1442,94114,eICU-CRD

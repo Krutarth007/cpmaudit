@@ -1,0 +1,92 @@
+model,n,estimator,ratio_mape,ratio_mape_min,ratio_mape_max,ratio_rms_sd,diff_unstable_pp,diff_unstable_min,diff_unstable_max,truth_mape,truth_unstable_pct
+Gradient boosting,500,bootstrap_new_patients,0.8612,0.6722,1.0549,0.8439,-9.2681,-12.6611,-5.5173,0.0472,34.4802
+Gradient boosting,500,bootstrap_oob,2.052,1.8044,2.3129,0.8675,-9.0002,-11.8802,-6.6802,0.0472,34.4802
+Gradient boosting,500,bootstrap_standard,0.9038,0.771,1.0336,1.3462,-17.6402,-19.6802,-14.8802,0.0472,34.4802
+Gradient boosting,1000,bootstrap_new_patients,0.8175,0.722,0.9829,0.7991,-8.7702,-11.5601,-4.8542,0.0417,28.1496
+Gradient boosting,1000,bootstrap_oob,2.2869,2.0337,2.4952,0.8128,-8.2096,-12.3496,-5.0496,0.0417,28.1496
+Gradient boosting,1000,bootstrap_standard,0.9654,0.8636,1.0568,1.4229,-14.0896,-16.5496,-11.9496,0.0417,28.1496
+Gradient boosting,2000,bootstrap_new_patients,0.8675,0.8169,0.9527,0.8233,-8.59,-10.2089,-7.2563,0.0381,26.3355
+Gradient boosting,2000,bootstrap_oob,2.3634,2.2523,2.4933,0.8184,-8.7555,-10.6355,-7.0355,0.0381,26.3355
+Gradient boosting,2000,bootstrap_standard,1.0433,0.9896,1.1157,1.5011,-12.9155,-14.0855,-11.6355,0.0381,26.3355
+Gradient boosting,3906,bootstrap_new_patients,0.9505,0.9154,0.9831,0.8438,-7.8794,-8.4199,-7.2563,0.0375,27.474
+Gradient boosting,3906,bootstrap_oob,2.0009,1.9613,2.0362,0.8323,-7.9656,-8.6824,-7.428,0.0375,27.474
+Gradient boosting,3906,bootstrap_standard,1.1193,1.0855,1.1616,1.4456,-11.0941,-12.0363,-9.9113,0.0375,27.474
+Gradient boosting,4000,bootstrap_new_patients,0.9378,0.8692,1.0002,0.8293,-7.9595,-8.9328,-6.9686,0.0374,27.2989
+Gradient boosting,4000,bootstrap_oob,1.9729,1.8595,2.0281,0.8204,-7.5689,-9.9739,-6.0489,0.0374,27.2989
+Gradient boosting,4000,bootstrap_standard,1.112,1.013,1.16,1.4292,-10.7239,-12.9489,-9.5239,0.0374,27.2989
+Gradient boosting,8000,bootstrap_new_patients,0.9856,0.9565,1.0065,0.8538,-5.2396,-5.705,-4.6165,0.0341,26.0103
+Gradient boosting,8000,bootstrap_oob,1.6461,1.6078,1.6868,0.861,-5.0078,-5.4353,-4.5728,0.0341,26.0103
+Gradient boosting,8000,bootstrap_standard,1.1555,1.1289,1.175,1.2919,-4.9878,-5.4103,-4.5228,0.0341,26.0103
+Gradient boosting,16000,bootstrap_new_patients,0.945,0.9356,0.9556,0.8201,-4.7191,-5.3297,-4.2537,0.0305,22.9451
+Gradient boosting,16000,bootstrap_oob,1.3241,1.3114,1.3361,0.8263,-4.3001,-4.9326,-3.6201,0.0305,22.9451
+Gradient boosting,16000,bootstrap_standard,1.0688,1.0574,1.0808,1.0988,-3.7401,-4.3013,-3.2513,0.0305,22.9451
+Logistic regression,500,analytic,0.8277,0.8277,0.8277,0.7616,6.0303,6.0303,6.0303,0.0955,54.0473
+Logistic regression,500,bootstrap_new_patients,1.29,1.1221,1.3703,1.4905,-11.2323,-19.5796,-5.6174,0.0955,54.0473
+Logistic regression,500,bootstrap_oob,1.3899,1.3039,1.4558,1.4759,-12.6073,-18.0473,-9.0473,0.0955,54.0473
+Logistic regression,500,bootstrap_standard,1.0045,0.9686,1.054,1.1969,-20.9673,-28.8473,-14.4473,0.0955,54.0473
+Logistic regression,1000,analytic,0.894,0.894,0.894,0.8588,0.2252,0.2252,0.2252,0.0604,44.8392
+Logistic regression,1000,bootstrap_new_patients,0.9847,0.9385,1.0166,1.1,-7.7618,-9.0829,-6.1429,0.0604,44.8392
+Logistic regression,1000,bootstrap_oob,1.0828,1.0483,1.1412,1.099,-8.1192,-9.8392,-6.4392,0.0604,44.8392
+Logistic regression,1000,bootstrap_standard,0.8959,0.8615,0.9496,0.9891,-8.6992,-10.0392,-7.3392,0.0604,44.8392
+Logistic regression,2000,analytic,0.9679,0.9679,0.9679,0.9353,0.1752,0.1752,0.1752,0.0385,32.8412
+Logistic regression,2000,bootstrap_new_patients,0.9921,0.9663,1.0104,1.0302,-3.7958,-6.5182,-1.2761,0.0385,32.8412
+Logistic regression,2000,bootstrap_oob,1.0643,1.0295,1.1006,1.0461,-3.5812,-6.3912,-1.1412,0.0385,32.8412
+Logistic regression,2000,bootstrap_standard,0.9687,0.946,1.0079,0.9997,-4.0512,-7.2412,-1.4412,0.0385,32.8412
+Logistic regression,3906,analytic,0.9723,0.9723,0.9723,0.9502,-0.3003,-0.3003,-0.3003,0.0271,24.2963
+Logistic regression,3906,bootstrap_new_patients,1.0005,0.9895,1.022,0.9953,-0.0676,-1.2511,1.6389,0.0271,24.2963
+Logistic regression,3906,bootstrap_oob,1.0493,1.0242,1.0913,1.0224,-0.5584,-2.202,1.587,0.0271,24.2963
+Logistic regression,3906,bootstrap_standard,0.9919,0.9585,1.0342,0.9925,-0.712,-2.4581,1.4846,0.0271,24.2963
+Logistic regression,4000,analytic,0.9993,0.9993,0.9993,0.9808,0.6381,0.6381,0.6381,0.026,23.1077
+Logistic regression,4000,bootstrap_new_patients,1.0084,0.9573,1.0453,1.0143,-0.578,-2.5147,0.6005,0.026,23.1077
+Logistic regression,4000,bootstrap_oob,1.066,1.013,1.0971,1.0367,-0.2427,-2.8077,1.0923,0.026,23.1077
+Logistic regression,4000,bootstrap_standard,1.0025,0.9461,1.0368,1.0054,-0.4577,-3.0577,0.7673,0.026,23.1077
+Logistic regression,8000,analytic,0.9658,0.9658,0.9658,0.9485,-0.4879,-0.4879,-0.4879,0.0189,17.2151
+Logistic regression,8000,bootstrap_new_patients,0.9996,0.9856,1.0304,0.9936,-0.0951,-1.176,0.8257,0.0189,17.2151
+Logistic regression,8000,bootstrap_oob,1.0364,1.0142,1.0718,1.0029,0.0074,-0.7776,0.7849,0.0189,17.2151
+Logistic regression,8000,bootstrap_standard,1.0014,0.9794,1.0334,0.9883,-0.0401,-0.9401,0.7849,0.0189,17.2151
+Logistic regression,16000,analytic,0.9519,0.9519,0.9519,0.9177,-0.2252,-0.2252,-0.2252,0.0135,12.3733
+Logistic regression,16000,bootstrap_new_patients,0.9852,0.9741,0.9902,0.959,-0.1651,-0.7632,0.3378,0.0135,12.3733
+Logistic regression,16000,bootstrap_oob,1.0083,1.0003,1.0158,0.9667,-0.2021,-0.5171,0.1767,0.0135,12.3733
+Logistic regression,16000,bootstrap_standard,0.9877,0.9789,0.9941,0.9507,-0.2008,-0.4983,0.1579,0.0135,12.3733
+Random forest,500,bootstrap_new_patients,1.0213,0.9509,1.0977,0.9963,0.1727,-1.3136,3.2779,0.0208,39.4845
+Random forest,500,bootstrap_oob,1.1931,1.0661,1.3259,0.9965,-1.3645,-4.2845,1.5155,0.0208,39.4845
+Random forest,500,bootstrap_standard,1.1032,0.9925,1.2298,1.1465,-2.0845,-4.6845,0.3155,0.0208,39.4845
+Random forest,1000,bootstrap_new_patients,0.9734,0.9427,1.0513,0.9522,-4.4414,-6.0428,-2.2144,0.0204,35.0181
+Random forest,1000,bootstrap_oob,1.1786,1.1037,1.2608,0.9593,-4.1781,-6.1181,-0.7181,0.0204,35.0181
+Random forest,1000,bootstrap_standard,1.0799,1.0153,1.1549,1.1368,-4.8581,-6.5181,-2.5181,0.0204,35.0181
+Random forest,2000,bootstrap_new_patients,0.974,0.9401,0.9987,0.9361,-3.1553,-4.4164,-1.176,0.0182,27.8744
+Random forest,2000,bootstrap_oob,1.2129,1.1716,1.2596,0.9346,-2.7244,-4.1244,-1.4244,0.0182,27.8744
+Random forest,2000,bootstrap_standard,1.1008,1.0597,1.1483,1.1602,-2.7644,-4.1744,-1.0744,0.0182,27.8744
+Random forest,3906,bootstrap_new_patients,1.0386,1.0022,1.0791,0.9838,-1.6489,-2.5898,-0.8257,0.0156,22.9326
+Random forest,3906,bootstrap_oob,1.3332,1.2887,1.3786,0.979,-1.4221,-2.0416,-0.4543,0.0156,22.9326
+Random forest,3906,bootstrap_standard,1.2013,1.1657,1.2417,1.2847,-0.3929,-1.0176,0.6721,0.0156,22.9326
+Random forest,4000,bootstrap_new_patients,1.0079,0.9594,1.0473,0.9541,-1.749,-2.5647,-0.4004,0.0158,23.2829
+Random forest,4000,bootstrap_oob,1.3095,1.2177,1.3557,0.9513,-1.4979,-2.4079,-0.0829,0.0158,23.2829
+Random forest,4000,bootstrap_standard,1.179,1.1009,1.2202,1.2562,-1.0629,-1.6329,-0.1329,0.0158,23.2829
+Random forest,8000,bootstrap_new_patients,1.0249,1.0076,1.0434,0.9401,-1.4338,-1.8766,-0.6381,0.0141,19.0041
+Random forest,8000,bootstrap_oob,1.3982,1.3612,1.4314,0.9398,-1.4466,-1.8041,-0.9041,0.0141,19.0041
+Random forest,8000,bootstrap_standard,1.2435,1.2199,1.2757,1.3242,-0.3966,-0.7541,0.0459,0.0141,19.0041
+Random forest,16000,bootstrap_new_patients,0.9883,0.9798,0.9964,0.8915,-2.1869,-2.6648,-1.5388,0.0131,16.4269
+Random forest,16000,bootstrap_oob,1.4218,1.4015,1.4342,0.8934,-1.8081,-2.0019,-1.5206,0.0131,16.4269
+Random forest,16000,bootstrap_standard,1.2509,1.2381,1.2643,1.3546,-0.2681,-0.4831,0.1419,0.0131,16.4269
+Ridge logistic regression,500,bootstrap_new_patients,1.6614,1.458,1.763,1.5405,-1.7415,-6.4306,3.6282,0.0324,44.5265
+Ridge logistic regression,500,bootstrap_oob,1.7609,1.6059,1.9163,1.5471,-3.0065,-9.3265,0.8735,0.0324,44.5265
+Ridge logistic regression,500,bootstrap_standard,1.6182,1.4485,1.7887,1.4756,-4.3665,-10.1265,-0.5265,0.0324,44.5265
+Ridge logistic regression,1000,bootstrap_new_patients,1.1379,1.0363,1.299,1.184,-5.187,-8.2572,-3.6907,0.0338,37.8706
+Ridge logistic regression,1000,bootstrap_oob,1.221,1.0694,1.3347,1.1893,-4.9706,-8.7706,-2.6706,0.0338,37.8706
+Ridge logistic regression,1000,bootstrap_standard,1.1166,0.9671,1.2391,1.1422,-5.9906,-9.4706,-3.9706,0.0338,37.8706
+Ridge logistic regression,2000,bootstrap_new_patients,1.1325,1.0387,1.222,1.118,-1.1735,-3.428,1.0134,0.0261,27.3614
+Ridge logistic regression,2000,bootstrap_oob,1.1949,1.085,1.314,1.1469,-1.4314,-3.2114,-0.0114,0.0261,27.3614
+Ridge logistic regression,2000,bootstrap_standard,1.1304,1.0152,1.2678,1.1244,-1.8814,-3.8114,-0.5614,0.0261,27.3614
+Ridge logistic regression,3906,bootstrap_new_patients,1.1189,1.046,1.2163,1.0561,0.1476,-0.4379,0.6381,0.0211,21.6189
+Ridge logistic regression,3906,bootstrap_oob,1.1571,1.065,1.2356,1.0836,-0.3542,-2.0849,0.5777,0.0211,21.6189
+Ridge logistic regression,3906,bootstrap_standard,1.1188,1.0235,1.2067,1.0701,-0.4412,-1.752,0.2961,0.0211,21.6189
+Ridge logistic regression,4000,bootstrap_new_patients,1.1328,1.0314,1.2856,1.0983,0.4029,-1.2261,1.5263,0.0204,20.3928
+Ridge logistic regression,4000,bootstrap_oob,1.1746,1.0869,1.3133,1.1249,0.8172,-0.7178,1.5822,0.0204,20.3928
+Ridge logistic regression,4000,bootstrap_standard,1.136,1.0382,1.2906,1.1046,0.6472,-1.3678,1.6822,0.0204,20.3928
+Ridge logistic regression,8000,bootstrap_new_patients,1.0407,1.0098,1.0735,1.0487,0.1802,-0.6756,0.9884,0.0159,15.6762
+Ridge logistic regression,8000,bootstrap_oob,1.0729,1.0323,1.1069,1.0615,0.1388,-0.3012,0.5488,0.0159,15.6762
+Ridge logistic regression,8000,bootstrap_standard,1.0475,1.0078,1.0795,1.0528,0.1338,-0.4512,0.6113,0.0159,15.6762
+Ridge logistic regression,16000,bootstrap_new_patients,1.0089,0.991,1.0249,1.0046,-0.2827,-0.5129,0.3128,0.0121,11.7353
+Ridge logistic regression,16000,bootstrap_oob,1.0279,1.0124,1.0473,1.0148,-0.2228,-0.6915,0.0085,0.0121,11.7353
+Ridge logistic regression,16000,bootstrap_standard,1.014,0.9981,1.0323,1.0077,-0.304,-0.8478,0.0397,0.0121,11.7353
