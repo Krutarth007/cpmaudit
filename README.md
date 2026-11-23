@@ -4,9 +4,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/cpmaudit.svg)](https://pypi.org/project/cpmaudit/)
 [![Python](https://img.shields.io/pypi/pyversions/cpmaudit.svg)](https://pypi.org/project/cpmaudit/)
-[![Tests](https://github.com/Krutarth007/cpmaudit/actions/workflows/ci.yml/badge.svg)](https://github.com/Krutarth007/cpmaudit/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Krutarth007/cpmaudit/blob/main/LICENSE)
-[![Downloads](https://static.pepy.tech/badge/cpmaudit)](https://pepy.tech/project/cpmaudit)
 <!-- After the first Zenodo release, add the DOI badge here:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
 
