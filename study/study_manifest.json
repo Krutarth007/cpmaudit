@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-11-21T03:13:15+00:00",
+  "preset": "full",
+  "notebooks": {
+    "notebook 1": {
+      "final_chain_sha256": "badcfe0bb3e5915d9a0594ba2d55b63af121e980df457a7ff96f391076ba5d99",
+      "files": 36,
+      "finished_utc": "2026-11-20T05:45:23+00:00"
+    },
+    "notebook 2": {
+      "final_chain_sha256": "37bb5cee362d8a6b6c21ed3ba31f3aaec31d3919661dc5d138942063b2898bf2",
+      "files": 40,
+      "finished_utc": "2026-11-20T15:10:28+00:00"
+    },
+    "notebook 3": {
+      "final_chain_sha256": "9337278b1ba3e407a1c8917fd528cd6a90213f6b61ed8894e0e8ad987a636835",
+      "files": 107,
+      "finished_utc": "2026-11-21T03:13:15+00:00"
+    }
+  },
+  "notebook1_dataset_recheck": [
+    {
+      "file": "outputs/part1/data/mimic_main.parquet",
+      "registered": true,
+      "matches": true
+    },
+    {
+      "file": "outputs/part1/data/eicu_main.parquet",
+      "registered": true,
+      "matches": true
+    },
+    {
+      "file": "outputs/part1/data/mimic_all_stays.parquet",
+      "registered": true,
+      "matches": true
+    },
+    {
+      "file": "outputs/part1/data/eicu_all_stays.parquet",
+      "registered": true,
+      "matches": true
+    }
+  ],
+  "study_sha256": "587377914671c2d30c1d5a5ec24d6e2a8bd5da3f9f817e12f772c9a3961a536f",
+  "environment": {
+    "python": "3.11.5",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "cpu_count": 14,
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "cpmaudit": "0.1.0"
+  },
+  "addendum": true
+}
