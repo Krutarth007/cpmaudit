@@ -1,0 +1,11 @@
+anticipated_c,parameters,set,r2_cox_snell,minimum_n,minimum_events,criterion_1,criterion_2,criterion_3
+0.7,53,core predictors,0.0465,9995,972.3,9995,2168,135
+0.7,75,with missingness indicators,0.0465,14144,1376.0,14144,3068,135
+0.75,53,core predictors,0.0742,6164,599.7,6164,2136,135
+0.75,75,with missingness indicators,0.0742,8723,848.6,8723,3022,135
+0.8,53,core predictors,0.1098,4073,396.2,4073,2094,135
+0.8,75,with missingness indicators,0.1098,5763,560.6,5763,2963,135
+0.85,53,core predictors,0.1552,2801,272.5,2801,2040,135
+0.85,75,with missingness indicators,0.1552,3964,385.6,3964,2887,135
+0.9,53,core predictors,0.2133,1969,191.5,1960,1969,135
+0.9,75,with missingness indicators,0.2133,2787,271.1,2774,2787,135

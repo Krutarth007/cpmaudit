@@ -1,0 +1,24 @@
+variable,label,domain,unit,plausible_low,plausible_high,window,aggregates,mimic_iv_source,eicu_crd_source
+heart_rate,Heart rate,vital,beats/min,1.0,300,0 to <24 h,"min, max, mean of hourly values",chartevents itemid 220045,vitalPeriodic.heartrate
+sbp,Systolic blood pressure,vital,mmHg,1.0,400,0 to <24 h,"min, max, mean of hourly values","chartevents itemid 220050, 220179",vitalPeriodic.systemicsystolic; vitalAperiodic.noninvasivesystolic
+dbp,Diastolic blood pressure,vital,mmHg,1.0,300,0 to <24 h,"min, max, mean of hourly values","chartevents itemid 220051, 220180",vitalPeriodic.systemicdiastolic; vitalAperiodic.noninvasivediastolic
+mbp,Mean arterial pressure,vital,mmHg,1.0,300,0 to <24 h,"min, max, mean of hourly values","chartevents itemid 220052, 220181, 225312",vitalPeriodic.systemicmean; vitalAperiodic.noninvasivemean
+resp_rate,Respiratory rate,vital,breaths/min,1.0,80,0 to <24 h,"min, max, mean of hourly values","chartevents itemid 220210, 224690",vitalPeriodic.respiration
+temperature,Temperature,vital,deg C,25.0,45,0 to <24 h,"min, max, mean of hourly values","chartevents itemid 223761, 223762",nurseCharting 'Temperature / Temperature (C)'
+spo2,Peripheral oxygen saturation,vital,%,1.0,100,0 to <24 h,"min, max, mean of hourly values",chartevents itemid 220277,vitalPeriodic.sao2
+creatinine,Creatinine,lab,mg/dL,0.1,40,-6 h to <24 h,"min, max",labevents itemid 50912,lab.labname = 'creatinine'
+bun,Blood urea nitrogen,lab,mg/dL,1.0,300,-6 h to <24 h,"min, max",labevents itemid 51006,lab.labname = 'BUN'
+sodium,Sodium,lab,mmol/L,90.0,200,-6 h to <24 h,"min, max",labevents itemid 50983,lab.labname = 'sodium'
+potassium,Potassium,lab,mmol/L,1.0,12,-6 h to <24 h,"min, max",labevents itemid 50971,lab.labname = 'potassium'
+chloride,Chloride,lab,mmol/L,50.0,180,-6 h to <24 h,"min, max",labevents itemid 50902,lab.labname = 'chloride'
+bicarbonate,Bicarbonate,lab,mmol/L,1.0,60,-6 h to <24 h,"min, max",labevents itemid 50882,lab.labname = 'bicarbonate'
+glucose,Glucose (laboratory),lab,mg/dL,10.0,2000,-6 h to <24 h,"min, max",labevents itemid 50931,lab.labname = 'glucose'
+hemoglobin,Haemoglobin,lab,g/dL,1.0,25,-6 h to <24 h,"min, max",labevents itemid 51222,lab.labname = 'Hgb'
+wbc,White cell count,lab,x10^3/uL,0.01,500,-6 h to <24 h,"min, max","labevents itemid 51301, 51300",lab.labname = 'WBC x 1000'
+platelets,Platelet count,lab,x10^3/uL,1.0,2000,-6 h to <24 h,"min, max",labevents itemid 51265,lab.labname = 'platelets x 1000'
+lactate,Lactate,lab,mmol/L,0.1,40,-6 h to <24 h,"min, max",labevents itemid 50813,lab.labname = 'lactate'
+bilirubin,Total bilirubin,lab,mg/dL,0.05,80,-6 h to <24 h,"min, max",labevents itemid 50885,lab.labname = 'total bilirubin'
+albumin,Albumin,lab,g/dL,0.5,7,-6 h to <24 h,"min, max",labevents itemid 50862,lab.labname = 'albumin'
+inr,International normalised ratio,lab,ratio,0.4,20,-6 h to <24 h,"min, max",labevents itemid 51237,lab.labname = 'PT - INR'
+gcs_total,GCS total (verbal assessable),neuro,points,3.0,15,0 to <24 h,min,"chartevents itemid 220739, 223900, 223901",nurseCharting 'Glasgow coma score / GCS Total'; nurseCharting 'Score (Glasgow Coma Scale) / Value'
+gcs_motor,GCS motor component,neuro,points,1.0,6,0 to <24 h,min,chartevents itemid 223901,nurseCharting 'Glasgow coma score / Motor'; nurseCharting 'Motor Response / Value'

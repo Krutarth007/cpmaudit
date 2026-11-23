@@ -1,0 +1,378 @@
+{
+  "notebook": "part1_cohorts_features_quality",
+  "started_utc": "2026-11-20T05:43:06+00:00",
+  "finished_utc": "2026-11-20T05:45:23+00:00",
+  "environment": {
+    "python": "3.11.5",
+    "platform": "Windows-10-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 181 Stepping 0, GenuineIntel",
+    "cpu_count": 14,
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "duckdb": "2.0.0",
+    "matplotlib": "3.11.2",
+    "cpmaudit": "0.1.0"
+  },
+  "steps": [
+    {
+      "step": "MIMIC-IV cohort",
+      "seconds": 0.6
+    },
+    {
+      "step": "eICU-CRD cohort",
+      "seconds": 2.2
+    },
+    {
+      "step": "MIMIC-IV chartevents (vital signs, GCS)",
+      "seconds": 13.7
+    },
+    {
+      "step": "MIMIC-IV labevents",
+      "seconds": 3.9
+    },
+    {
+      "step": "eICU-CRD vitalPeriodic + vitalAperiodic + nurseCharting temperature",
+      "seconds": 53.7
+    },
+    {
+      "step": "eICU-CRD lab",
+      "seconds": 3.0
+    },
+    {
+      "step": "eICU-CRD nurseCharting (GCS)",
+      "seconds": 0.4
+    },
+    {
+      "step": "Assemble datasets",
+      "seconds": 16.6
+    }
+  ],
+  "files": [
+    {
+      "file": "outputs\\part1\\tables\\tableS1_feature_dictionary.csv",
+      "kind": "table",
+      "description": "Harmonised predictor definitions, sources, windows and plausibility limits",
+      "sha256": "46cda6080e9a36f8d53e4124adc706c03c4f1a07b02a6804c09d09620afe6048",
+      "chain_sha256": "05026aa6f7db9926f3804f1488ef2254924d05ba5dd6a917a5b2b643a5f5c68d",
+      "bytes": 3330
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS0_release_integrity.csv",
+      "kind": "table",
+      "description": "Local row counts compared with published release counts",
+      "sha256": "8e65b4ebe6bc59d5d85ba16dc1bce97e754eaf6e4f59a61a006a4dbd6a38aa6d",
+      "chain_sha256": "c0bfa125ca9f688d77e44aee6e8d979acd5ed681ee4317aecb06788c97c278e2",
+      "bytes": 305
+    },
+    {
+      "file": "outputs\\part1\\tables\\flow_counts.csv",
+      "kind": "table",
+      "description": "Cohort flow counts for both databases",
+      "sha256": "b3616034bbd7caa2d118a39a88f7e0b3e314cceaf3fe1876092959601dee4888",
+      "chain_sha256": "25364c20901c12ecfbb46cb9a6cb52e617618542b5894476119cb7f00cca5c4e",
+      "bytes": 1010
+    },
+    {
+      "file": "outputs\\part1\\data\\mimic_main.parquet",
+      "kind": "data",
+      "description": "MIMIC-IV main cohort: first ICU stays, harmonised predictors and outcomes",
+      "sha256": "443cac4b047acca7c80f1790e3e269e0b5638c99f75414d8dd5f4c7a50718c6e",
+      "chain_sha256": "5a969aad355f2c3abcf6dd54938e8403012b804bdaef14e77ea34ebab04d8b67",
+      "bytes": 5546093
+    },
+    {
+      "file": "outputs\\part1\\data\\eicu_main.parquet",
+      "kind": "data",
+      "description": "eICU-CRD main cohort: first ICU stays, harmonised predictors and outcomes",
+      "sha256": "9042f865d2b13ae25292b4b003349d22e7fef77d8d849be9b0eee6c1a283f1e9",
+      "chain_sha256": "29bae27196c6a2c4f263cf7afa93290c9c2d7fe49bd2154ecc0b7e2960169845",
+      "bytes": 14688920
+    },
+    {
+      "file": "outputs\\part1\\data\\mimic_all_stays.parquet",
+      "kind": "data",
+      "description": "MIMIC-IV all eligible ICU stays (sensitivity analysis)",
+      "sha256": "56d98d2808127b538f7872895a6398182894763e1bf02ada56563f6e5d270590",
+      "chain_sha256": "c14bc7323ea6e45eff6dea98084d6772063414010c75e50c93a68076d8d80009",
+      "bytes": 7654714
+    },
+    {
+      "file": "outputs\\part1\\data\\eicu_all_stays.parquet",
+      "kind": "data",
+      "description": "eICU-CRD all eligible ICU stays (sensitivity analysis)",
+      "sha256": "15c41eb7d939410e36d22d76f638e910481167da41a5da02a5249a04fd027644",
+      "chain_sha256": "fb998d724b5fcbf2747faec6f22bed89feb08372cb2142f06a19d32a4949a941",
+      "bytes": 19690093
+    },
+    {
+      "file": "outputs\\part1\\data\\analysis_spec.json",
+      "kind": "json",
+      "description": "Predictor list, outcomes, identifiers and dataset paths used by notebooks 2 and 3",
+      "sha256": "f7b4b6b91dfd0a52f463f737e35f7b19890f3f56b9a1dd7dfdaa228d7324cbd7",
+      "chain_sha256": "fa4cc246f946e1961f2e4bde21ea7ef4c915da27ae6f153765341c4313c04133",
+      "bytes": 4776
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS2_implausible_values.csv",
+      "kind": "table",
+      "description": "Raw measurements removed by plausibility limits, by variable and database",
+      "sha256": "f66d2d99d3719e45620a9f089bfbbdd742c39355b29af88a254af8502292a211",
+      "chain_sha256": "e2530a827278622c4ee7a57e5a4c5b21c990ba1f98c3cf1eb56cbe60cbee7530",
+      "bytes": 2993
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS3_missingness.csv",
+      "kind": "table",
+      "description": "Percentage of stays without a valid value and mortality difference measured minus not measured, by variable and database",
+      "sha256": "4feb0f67dcb5338910346be7c598292b9cf7fcee2f696a90e7b7c5f1c48177a7",
+      "chain_sha256": "11f458bda477b3f776f2e098cacc0d5d73ab13d2186d8338d1708f024f82e4b5",
+      "bytes": 1810
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig2_missingness.png",
+      "kind": "figure-png",
+      "description": "Missing data by variable and database, and mortality difference between measured and unmeasured stays",
+      "sha256": "d0ab48253c84e1775bc42d47f6174353f170b3302096e689288011f336cbb384",
+      "chain_sha256": "30e72c3ebaf62d413d13635d5e63ec2ecee11f3c2ea0b9e52bb29e7d8dee7f67",
+      "bytes": 279987
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig2_missingness.pdf",
+      "kind": "figure-pdf",
+      "description": "Missing data by variable and database, and mortality difference between measured and unmeasured stays",
+      "sha256": "ea2e3dcad7f6852d1083fa0ee41e64fdb600a2cc983e429c828aa8e2beb7c3da",
+      "chain_sha256": "53142fc4538b2c046a75d102660854b78ec67ced0c478efe0c4db27893d425c4",
+      "bytes": 29677
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS10_recording_frequency.csv",
+      "kind": "table",
+      "description": "Median valid measurements per stay and hours with data, by variable and database",
+      "sha256": "eb68d22c52bab3b793a8f8108acbf3c663e6673f10235bf5c10dac3e61aa6010",
+      "chain_sha256": "a7b9b09621e230824a2618966024dc2122a8f9bc1ce30413abb953819aa45232",
+      "bytes": 2203
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS11_vital_rule_smd.csv",
+      "kind": "table",
+      "description": "Between-database SMD of vital-sign predictors under the two hourly rules",
+      "sha256": "d54c1df79ca04ac1b0acf8247eb5870f0fb4ed396dcdcc22907391b0159fe20f",
+      "chain_sha256": "8a347e8fb77b6f6ce1dbecc76b8690e0efe84747b4ed2d8423e4b3bcbd16fa74",
+      "bytes": 1308
+    },
+    {
+      "file": "outputs\\part1\\figures\\figS2_recording_frequency.png",
+      "kind": "figure-png",
+      "description": "Recording frequency by database and effect of the hourly vital-sign rule on between-database SMD",
+      "sha256": "6f43a24e5107ebcec0731dc5f4f1a270f57c48c489c2d2a110055d8a3d694af7",
+      "chain_sha256": "ef5baa16db379e05ac7adbf4a852bd20bae0fdc72c4d297d81a4dce85b07c9cf",
+      "bytes": 469392
+    },
+    {
+      "file": "outputs\\part1\\figures\\figS2_recording_frequency.pdf",
+      "kind": "figure-pdf",
+      "description": "Recording frequency by database and effect of the hourly vital-sign rule on between-database SMD",
+      "sha256": "1c17021ea76ed9bd5c3049376736bdbd24d3cc9d55c5a942489807295e1c3ad5",
+      "chain_sha256": "0c1aa0f78690716e1ebca44a7f366f63b9b1f9e7464a56bcd8bc58ff52a58a40",
+      "bytes": 36856
+    },
+    {
+      "file": "outputs\\part1\\tables\\table1_characteristics.csv",
+      "kind": "table",
+      "description": "Table 1: characteristics of the main cohorts by database",
+      "sha256": "bb575e4129fdc2ef479cbfa6988ea226947e0e7c7e68883fcc67c2d1ce186c82",
+      "chain_sha256": "88172dd9a423017934b057f994c067438013439a09cad09b6903c936481a699c",
+      "bytes": 2974
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS4_all_predictors_by_database.csv",
+      "kind": "table",
+      "description": "All candidate predictors by database with SMD",
+      "sha256": "c8d4e06dd0c0a5cd09a876e92c9840968a2c8e409e94cae061f53fa6aa6014c4",
+      "chain_sha256": "60275c047d2ff105d7c708063e437cb21fffff3439e9d1712930c6ef888b904e",
+      "bytes": 4209
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS5_predictors_by_outcome.csv",
+      "kind": "table",
+      "description": "Key predictors by in-hospital outcome within each database",
+      "sha256": "29a67eb8aba97d0960d367ed2456cf045bdba21380ad093825d03bba8c38e46b",
+      "chain_sha256": "ba63ccc4f66ef86a2dcdb9f60916b82f4f204acbd12af6122869b761b23038c1",
+      "bytes": 3264
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS6_case_mix_smd.csv",
+      "kind": "table",
+      "description": "Standardised mean differences, eICU-CRD vs MIMIC-IV, all predictors",
+      "sha256": "0e34aa08be0ba8c39344d2194cdfa0f34fd1a576ad49c72383e64791b692f464",
+      "chain_sha256": "ce04c5f4fc9cd0b0885711185ff079fab387e50cdb2f285fc5e2b2c8f8dea822",
+      "bytes": 4032
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig3_case_mix_smd.png",
+      "kind": "figure-png",
+      "description": "Standardised mean differences between eICU-CRD and MIMIC-IV, 30 largest",
+      "sha256": "3e1bed852d5e50a6a7b8caa7fdfd807963066d1745832c8633c35f42326fd0cd",
+      "chain_sha256": "c7818ad9ddd264aa7728a4b236e67086200c8a91b24782e57b0f07c0d6fdbce2",
+      "bytes": 338296
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig3_case_mix_smd.pdf",
+      "kind": "figure-pdf",
+      "description": "Standardised mean differences between eICU-CRD and MIMIC-IV, 30 largest",
+      "sha256": "a71d3226999b8242701aaa5bc08c73daecbc0991756761e96f63fd6c98a65c54",
+      "chain_sha256": "20cbb12ce42f071a44142c046e027cc9fa78234535055f698b9659edf0a12cc6",
+      "bytes": 33120
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig4_predictor_distributions.png",
+      "kind": "figure-png",
+      "description": "Empirical cumulative distributions of eight key predictors by database",
+      "sha256": "bebcfca22ecf4e2fbecc60d0fab176f402a087ac617833e129cb156fd6275762",
+      "chain_sha256": "572944ed1dacea69e64c2c774914507432977966328beae04b194f3bffe4324b",
+      "bytes": 330169
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig4_predictor_distributions.pdf",
+      "kind": "figure-pdf",
+      "description": "Empirical cumulative distributions of eight key predictors by database",
+      "sha256": "1723baa56ff9022a51ffe35a533ed1b600140cf58b96b6c4c7f3b96ad0213a0c",
+      "chain_sha256": "cefaca25ef36eab4136bd510b44ed0f0daee6a1c639d764f6b8b65aafd5d23b9",
+      "bytes": 61412
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS7_eicu_hospitals.csv",
+      "kind": "table",
+      "description": "eICU-CRD hospitals: eligible first stays, deaths and characteristics",
+      "sha256": "ff1d1aa7602a6ebb61b789b04fb24191518dbdc280060494304dbd12678f7ea6",
+      "chain_sha256": "8c14c47e86f1dd82fc839e3e88cb713110377bd7e97f760b68830ce34c1d7301",
+      "bytes": 9989
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig5_eicu_hospital_funnel.png",
+      "kind": "figure-png",
+      "description": "Funnel plot of crude in-hospital mortality by eICU-CRD hospital size",
+      "sha256": "330b395c151cc72a0e0322c2ef0d8e0564fd66ef897c69201e3fc73421ba4397",
+      "chain_sha256": "33a2c5d200dbb21a09f13f36120ec7c69ccb1352380ae3a7a1e24cd00f8ac14e",
+      "bytes": 177162
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig5_eicu_hospital_funnel.pdf",
+      "kind": "figure-pdf",
+      "description": "Funnel plot of crude in-hospital mortality by eICU-CRD hospital size",
+      "sha256": "27f03dd2b50a5a422b4398327904e7f792c6c93888e141a392538b88c0dc8259",
+      "chain_sha256": "c52dfcf2f0ef0fc96c266cbb519c1e8c9f52911101b29c924f168454aa82f4da",
+      "bytes": 29781
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS8_minimum_sample_size.csv",
+      "kind": "table",
+      "description": "Analytic minimum sample size by anticipated C statistic and candidate parameter count",
+      "sha256": "09d4584db8392c61214a6ef92cddf368c9f697e98d79d8290269fb24118f8e14",
+      "chain_sha256": "ecad49e6c650098e45754978f4fdea4c4584d37e48c57c31702bf636b7b9f814",
+      "bytes": 731
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig6_sample_size_context.png",
+      "kind": "figure-png",
+      "description": "Analytic minimum sample size and expected shrinkage across development sizes",
+      "sha256": "011cbc98c89171f2b8e48b6e3aa99873c30e9aeea969b39d17c555f4d3e278ff",
+      "chain_sha256": "807e7cd4e4affe037b6ea52ac2d3e187419dd623454eb05f2addc488e33b7c43",
+      "bytes": 329054
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig6_sample_size_context.pdf",
+      "kind": "figure-pdf",
+      "description": "Analytic minimum sample size and expected shrinkage across development sizes",
+      "sha256": "b3fa4b733761d9c98371e39405190e2e9b773693d91d1ee9bf69b8507ed3a3be",
+      "chain_sha256": "08876e9d238d42efbed2f0e6fb055912219837b456e5ae262ac5e847f03d69b4",
+      "bytes": 28327
+    },
+    {
+      "file": "outputs\\part1\\tables\\tableS9_mortality_by_period.csv",
+      "kind": "table",
+      "description": "Crude mortality by calendar period",
+      "sha256": "bcd65d57a0a570c4bb3bab3443e052b44fc5e767a046e5fb3cd46c5f8a704eef",
+      "chain_sha256": "6203516bd6f37a78ab63ddca3ada53af4aad2785993ad6f130e973423fcbf5b5",
+      "bytes": 574
+    },
+    {
+      "file": "outputs\\part1\\figures\\figS1_mortality_by_period.png",
+      "kind": "figure-png",
+      "description": "Crude in-hospital mortality by calendar period and database",
+      "sha256": "7fc153eb67d0465831ae39e933e0145b914324e7d4afc75aa3d6ee49a012fa9c",
+      "chain_sha256": "d4ccea4edd601164f232c7f4d2f2e487571b923e60a0fc8473df98d211f7d7a9",
+      "bytes": 80007
+    },
+    {
+      "file": "outputs\\part1\\figures\\figS1_mortality_by_period.pdf",
+      "kind": "figure-pdf",
+      "description": "Crude in-hospital mortality by calendar period and database",
+      "sha256": "3d1095871d5d4bb527df6dbba87196f61df86f9a640114f666fa1c48bf1fd360",
+      "chain_sha256": "a3a5002fd62e31baa33c94a7fabe01bbdca15c9c4afe184690af081d8b32c48a",
+      "bytes": 18577
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig1_study_flow.png",
+      "kind": "figure-png",
+      "description": "Study flow for MIMIC-IV and eICU-CRD",
+      "sha256": "9ef34145b18bbd030d4fab0d73940fe34ba22d8e919bcdd8db4c3bc828c8e695",
+      "chain_sha256": "8d6b76eb41ce9fa43d4c8342226c7d399b260271613eb82ceb37c6988a231d92",
+      "bytes": 336121
+    },
+    {
+      "file": "outputs\\part1\\figures\\fig1_study_flow.pdf",
+      "kind": "figure-pdf",
+      "description": "Study flow for MIMIC-IV and eICU-CRD",
+      "sha256": "c478ea6a79039a104d6dea5b8ade9a32cbc1afd3fd18022a3127003c3283df9f",
+      "chain_sha256": "d8b5613af50ee3f927ccd2b653cb0f58164c2744509ed2959b9656e09c1fb793",
+      "bytes": 31659
+    },
+    {
+      "file": "outputs\\part1\\data\\study_summary.json",
+      "kind": "json",
+      "description": "Key cohort numbers and planning values for notebooks 2 and 3",
+      "sha256": "c92509e997c0221d8eeb9e3c144d061bb147df226b1758440772f6ac6a8600e9",
+      "chain_sha256": "badcfe0bb3e5915d9a0594ba2d55b63af121e980df457a7ff96f391076ba5d99",
+      "bytes": 3713
+    }
+  ],
+  "final_chain_sha256": "badcfe0bb3e5915d9a0594ba2d55b63af121e980df457a7ff96f391076ba5d99",
+  "config": {
+    "mimic_roots": [
+      "C:\\icu_parquet\\mimic",
+      "C:\\mimic-iv-2.2"
+    ],
+    "eicu_roots": [
+      "C:\\icu_parquet\\eicu",
+      "C:\\Users\\kruta\\Downloads\\eicu-collaborative-research-database-2.0"
+    ],
+    "project_dir": "C:\\Users\\kruta\\Downloads",
+    "min_age": 18,
+    "landmark_hours": 24,
+    "lab_lookback_hours": 6,
+    "prolonged_icu_days": 7,
+    "age_cap": 90,
+    "vital_hourly_rule": "first",
+    "design_sizes": [
+      500,
+      1000,
+      2000,
+      4000,
+      8000,
+      16000
+    ],
+    "min_hospital_stays": 100,
+    "anticipated_c_grid": [
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "duckdb_memory_limit": "4GB",
+    "duckdb_threads": 4,
+    "force_rebuild": false,
+    "seed": 20261120
+  }
+}

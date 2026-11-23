@@ -1,0 +1,6 @@
+release,quantity,published,local,matches
+MIMIC-IV v2.2,ICU stays (icustays rows),73181,73181,True
+MIMIC-IV v2.2,Patients with an ICU stay,50920,50920,True
+eICU-CRD v2.0,ICU stays (patient rows),200859,200859,True
+eICU-CRD v2.0,Unique patients,139367,139367,True
+eICU-CRD v2.0,Hospitals,208,208,True
