@@ -1,0 +1,5 @@
+model,median_development,median_external,iqr_development,iqr_external,share_below_100_development,share_below_100_external,share_below_30_external,spearman_atypicality_external,median_external_Common in MIMIC-IV (1% or more),median_external_Uncommon (0.1% to 1%),median_external_Rare (under 0.1%),median_external_Never seen in MIMIC-IV
+Logistic regression,1459.1426,201.7603,532 to 3909,34 to 1108,0.0247,0.405,0.2291,-0.455,1116.8957,676.9105,33.1977,30.5152
+Ridge logistic regression,1574.4574,225.4248,577 to 4117,39 to 1214,0.0199,0.3911,0.2065,-0.4667,1211.8797,772.8196,36.5362,35.5211
+Random forest,500.084,443.1241,362 to 756,357 to 576,0.0003,0.0002,0.0,0.1004,454.0313,437.3859,434.4638,440.503
+Gradient boosting,287.8746,104.4277,73 to 1128,40 to 379,0.3073,0.4898,0.164,0.0021,165.5386,170.2337,66.0808,73.5208

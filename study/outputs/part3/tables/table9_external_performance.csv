@@ -1,0 +1,49 @@
+model,metric,external,lower,upper,development_oob,development_apparent,refits_lower,refits_upper
+Logistic regression,auroc,0.8074,0.798,0.8162,0.8514,0.8559,0.7599,0.8077
+Logistic regression,oe_ratio,0.8002,0.7355,0.8645,1.0003,0.9994,0.5988,1.0669
+Logistic regression,brier,0.0744,0.0709,0.0782,0.0701,0.0693,0.0728,0.0876
+Logistic regression,calibration_slope,0.7584,0.7248,0.7939,0.9674,1.0012,0.5252,0.765
+Logistic regression,calibration_intercept,-0.3356,-0.4622,-0.2186,-0.0001,-0.0008,-0.8205,0.0984
+Logistic regression,net_benefit@0.1,0.0404,0.036,0.0447,0.0511,0.0522,0.034,0.041
+Logistic regression,net_benefit_treat_all@0.1,-0.0078,-0.0141,-0.0012,,,,
+Logistic regression,net_benefit@0.2,0.0205,0.0167,0.0239,0.0312,0.0324,0.0093,0.0221
+Logistic regression,net_benefit_treat_all@0.2,-0.1337,-0.1408,-0.1264,,,,
+Logistic regression,net_benefit@0.3,0.01,0.0065,0.013,0.0192,0.0202,-0.0062,0.0126
+Logistic regression,net_benefit_treat_all@0.3,-0.2957,-0.3038,-0.2873,,,,
+Logistic regression,ici,0.0234,,,0.0137,0.013,0.0174,0.0653
+Ridge logistic regression,auroc,0.8083,0.7993,0.8166,0.852,0.8559,0.7744,0.8099
+Ridge logistic regression,oe_ratio,0.8057,0.7461,0.8617,0.998,1.0004,0.6055,1.0992
+Ridge logistic regression,brier,0.0739,0.0702,0.0775,0.0699,0.0693,0.0724,0.0876
+Ridge logistic regression,calibration_slope,0.778,0.7472,0.8111,0.9849,1.0145,0.5981,0.7895
+Ridge logistic regression,calibration_intercept,-0.3221,-0.4324,-0.2219,-0.0035,0.0006,-0.8116,0.1428
+Ridge logistic regression,net_benefit@0.1,0.0405,0.0361,0.0447,0.0512,0.0521,0.0343,0.041
+Ridge logistic regression,net_benefit_treat_all@0.1,-0.0078,-0.0141,-0.0016,,,,
+Ridge logistic regression,net_benefit@0.2,0.0209,0.0174,0.0245,0.0311,0.0322,0.0083,0.022
+Ridge logistic regression,net_benefit_treat_all@0.2,-0.1337,-0.1409,-0.1268,,,,
+Ridge logistic regression,net_benefit@0.3,0.0105,0.0074,0.0134,0.019,0.0201,-0.0063,0.0127
+Ridge logistic regression,net_benefit_treat_all@0.3,-0.2957,-0.3039,-0.2878,,,,
+Ridge logistic regression,ici,0.0224,,,0.0137,0.0132,0.0163,0.066
+Random forest,auroc,0.8353,0.829,0.8413,0.8716,0.9549,0.829,0.8365
+Random forest,oe_ratio,0.7826,0.7377,0.8251,0.9981,0.997,0.7496,0.7984
+Random forest,brier,0.0703,0.0671,0.0739,0.0685,0.0565,0.07,0.0708
+Random forest,calibration_slope,1.56,1.509,1.6171,1.457,2.686,1.4565,1.5713
+Random forest,calibration_intercept,-0.3024,-0.373,-0.2387,-0.0029,-0.0039,-0.3581,-0.2787
+Random forest,net_benefit@0.1,0.0394,0.0344,0.0446,0.055,0.0687,0.0377,0.0403
+Random forest,net_benefit_treat_all@0.1,-0.0078,-0.0134,-0.001,,,,
+Random forest,net_benefit@0.2,0.0249,0.0217,0.0284,0.0352,0.0624,0.0228,0.0257
+Random forest,net_benefit_treat_all@0.2,-0.1337,-0.1401,-0.1261,,,,
+Random forest,net_benefit@0.3,0.0161,0.0141,0.0183,0.0198,0.0425,0.0153,0.0166
+Random forest,net_benefit_treat_all@0.3,-0.2957,-0.3029,-0.2869,,,,
+Random forest,ici,0.0372,,,0.0245,0.0609,0.0343,0.04
+Gradient boosting,auroc,0.839,0.8325,0.846,0.8794,0.9352,0.8298,0.8389
+Gradient boosting,oe_ratio,0.7497,0.7068,0.793,1.0454,1.0003,0.6806,0.8159
+Gradient boosting,brier,0.0705,0.0675,0.0736,0.0656,0.0507,0.07,0.0748
+Gradient boosting,calibration_slope,0.9304,0.9076,0.9566,0.9952,1.4938,0.8424,0.9123
+Gradient boosting,calibration_intercept,-0.4197,-0.5025,-0.3398,0.0667,0.0005,-0.576,-0.3025
+Gradient boosting,net_benefit@0.1,0.0445,0.0399,0.0493,0.0574,0.068,0.0426,0.0455
+Gradient boosting,net_benefit_treat_all@0.1,-0.0078,-0.0137,-0.0014,,,,
+Gradient boosting,net_benefit@0.2,0.0237,0.0201,0.0276,0.0375,0.0566,0.0194,0.0248
+Gradient boosting,net_benefit_treat_all@0.2,-0.1337,-0.1405,-0.1266,,,,
+Gradient boosting,net_benefit@0.3,0.0132,0.0099,0.0164,0.0243,0.0469,0.0066,0.0137
+Gradient boosting,net_benefit_treat_all@0.3,-0.2957,-0.3034,-0.2875,,,,
+Gradient boosting,ici,0.031,,,0.0095,0.0275,0.0213,0.0437

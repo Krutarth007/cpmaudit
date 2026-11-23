@@ -1,0 +1,65 @@
+model,pattern,patients,share,itr,dir,unstable_per_1000,representation,gcs_motor
+Logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.08636,1.0688,82.69076,Imputation + indicators,included
+Logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.22963,1.23644,104.29338,Imputation + indicators,included
+Logistic regression,Rare (under 0.1%),15593,0.16568,4.53362,4.30354,424.67774,Imputation + indicators,included
+Logistic regression,Never seen in MIMIC-IV,28824,0.30627,5.2533,4.46155,428.73994,Imputation + indicators,included
+Logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.09252,1.08272,85.80627,Imputation + indicators,excluded
+Logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.2311,1.23382,104.11449,Imputation + indicators,excluded
+Logistic regression,Rare (under 0.1%),15593,0.16568,1.91519,2.10374,196.75495,Imputation + indicators,excluded
+Logistic regression,Never seen in MIMIC-IV,28824,0.30627,2.92786,2.72875,271.96087,Imputation + indicators,excluded
+Logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.11675,1.17847,84.01485,Imputation only,included
+Logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.11542,1.1608,89.1771,Imputation only,included
+Logistic regression,Rare (under 0.1%),15593,0.16568,1.17325,1.18424,78.24024,Imputation only,included
+Logistic regression,Never seen in MIMIC-IV,28824,0.30627,1.15301,1.17593,76.29059,Imputation only,included
+Ridge logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.08129,1.07402,82.32728,Imputation + indicators,included
+Ridge logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.20936,1.21744,102.05725,Imputation + indicators,included
+Ridge logistic regression,Rare (under 0.1%),15593,0.16568,4.04082,4.4732,437.24748,Imputation + indicators,included
+Ridge logistic regression,Never seen in MIMIC-IV,28824,0.30627,4.5905,4.52934,436.96225,Imputation + indicators,included
+Ridge logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.09176,1.06085,83.54752,Imputation + indicators,excluded
+Ridge logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.27705,1.27068,107.24508,Imputation + indicators,excluded
+Ridge logistic regression,Rare (under 0.1%),15593,0.16568,1.81549,2.03109,184.57,Imputation + indicators,excluded
+Ridge logistic regression,Never seen in MIMIC-IV,28824,0.30627,2.59104,2.46849,246.73883,Imputation + indicators,excluded
+Ridge logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.13473,1.18189,85.26105,Imputation only,included
+Ridge logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.13129,1.15787,89.53488,Imputation only,included
+Ridge logistic regression,Rare (under 0.1%),15593,0.16568,1.17811,1.16773,77.98371,Imputation only,included
+Ridge logistic regression,Never seen in MIMIC-IV,28824,0.30627,1.1573,1.15738,76.11712,Imputation only,included
+Random forest,Common in MIMIC-IV (1% or more),38517,0.40926,0.99113,0.98335,135.7842,Imputation + indicators,included
+Random forest,Uncommon (0.1% to 1%),11180,0.11879,1.00175,1.00335,152.9517,Imputation + indicators,included
+Random forest,Rare (under 0.1%),15593,0.16568,0.96256,0.97136,156.86526,Imputation + indicators,included
+Random forest,Never seen in MIMIC-IV,28824,0.30627,0.97268,0.96395,166.80544,Imputation + indicators,included
+Random forest,Common in MIMIC-IV (1% or more),38517,0.40926,0.98856,0.99005,143.18353,Imputation + indicators,excluded
+Random forest,Uncommon (0.1% to 1%),11180,0.11879,0.98703,1.00586,158.76565,Imputation + indicators,excluded
+Random forest,Rare (under 0.1%),15593,0.16568,0.99061,1.02444,139.67806,Imputation + indicators,excluded
+Random forest,Never seen in MIMIC-IV,28824,0.30627,0.99608,1.01269,153.10158,Imputation + indicators,excluded
+Random forest,Common in MIMIC-IV (1% or more),38517,0.40926,0.98643,0.97479,141.31422,Imputation only,included
+Random forest,Uncommon (0.1% to 1%),11180,0.11879,0.98867,0.99426,158.49732,Imputation only,included
+Random forest,Rare (under 0.1%),15593,0.16568,1.00658,0.97671,139.42154,Imputation only,included
+Random forest,Never seen in MIMIC-IV,28824,0.30627,1.00552,0.9879,138.11407,Imputation only,included
+Gradient boosting,Common in MIMIC-IV (1% or more),38517,0.40926,1.04439,1.03276,184.59382,Native missing values,included
+Gradient boosting,Uncommon (0.1% to 1%),11180,0.11879,1.09257,1.05932,182.37925,Native missing values,included
+Gradient boosting,Rare (under 0.1%),15593,0.16568,1.12039,1.09715,260.62977,Native missing values,included
+Gradient boosting,Never seen in MIMIC-IV,28824,0.30627,1.15912,1.142,275.36081,Native missing values,included
+Gradient boosting,Common in MIMIC-IV (1% or more),38517,0.40926,1.04343,1.02265,188.02087,Native missing values,excluded
+Gradient boosting,Uncommon (0.1% to 1%),11180,0.11879,1.09169,1.07745,191.86047,Native missing values,excluded
+Gradient boosting,Rare (under 0.1%),15593,0.16568,1.04995,1.06408,238.31206,Native missing values,excluded
+Gradient boosting,Never seen in MIMIC-IV,28824,0.30627,1.10084,1.10359,259.19373,Native missing values,excluded
+Random forest,Common in MIMIC-IV (1% or more),38517,0.40926,0.99274,0.98374,134.51203,Native missing values,included
+Random forest,Uncommon (0.1% to 1%),11180,0.11879,1.00474,0.99822,154.38283,Native missing values,included
+Random forest,Rare (under 0.1%),15593,0.16568,0.98464,0.99038,146.9249,Native missing values,included
+Random forest,Never seen in MIMIC-IV,28824,0.30627,1.00722,1.0285,170.51762,Native missing values,included
+Gradient boosting,Common in MIMIC-IV (1% or more),38517,0.40926,1.05043,1.03181,191.47389,Imputation only,included
+Gradient boosting,Uncommon (0.1% to 1%),11180,0.11879,1.06789,1.05233,191.32379,Imputation only,included
+Gradient boosting,Rare (under 0.1%),15593,0.16568,1.0643,1.03147,173.9242,Imputation only,included
+Gradient boosting,Never seen in MIMIC-IV,28824,0.30627,1.07975,1.03879,162.64224,Imputation only,included
+Gradient boosting,Common in MIMIC-IV (1% or more),38517,0.40926,1.06338,1.03862,192.38258,Imputation + indicators,included
+Gradient boosting,Uncommon (0.1% to 1%),11180,0.11879,1.08406,1.06221,190.07156,Imputation + indicators,included
+Gradient boosting,Rare (under 0.1%),15593,0.16568,1.03945,1.0041,253.70358,Imputation + indicators,included
+Gradient boosting,Never seen in MIMIC-IV,28824,0.30627,1.07612,1.04501,252.84485,Imputation + indicators,included
+Logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.08211,1.06881,100.81263,Imputation only,excluded
+Logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.07058,1.08053,98.0322,Imputation only,excluded
+Logistic regression,Rare (under 0.1%),15593,0.16568,1.11519,1.08511,96.38941,Imputation only,excluded
+Logistic regression,Never seen in MIMIC-IV,28824,0.30627,1.08015,1.04373,91.34749,Imputation only,excluded
+Ridge logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.09308,1.09077,98.91736,Imputation only,excluded
+Ridge logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.10241,1.12179,97.40608,Imputation only,excluded
+Ridge logistic regression,Rare (under 0.1%),15593,0.16568,1.12763,1.09312,93.05458,Imputation only,excluded
+Ridge logistic regression,Never seen in MIMIC-IV,28824,0.30627,1.09993,1.08628,90.7924,Imputation only,excluded

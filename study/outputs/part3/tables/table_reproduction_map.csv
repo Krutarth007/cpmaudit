@@ -1,0 +1,107 @@
+file,kind,description,sha256
+outputs\part2\data\full_audit_lr_01fb9742.npz,input-notebook2,Notebook 2 full-sample audit file used here,bacada7ca0fe467e
+outputs\part2\data\full_audit_lr_01fb9742_replicates.parquet,input-notebook2,Notebook 2 full-sample audit file used here,18477190335b40c8
+outputs\part2\data\full_audit_lr_01fb9742.json,input-notebook2,Notebook 2 full-sample audit file used here,384fbf8addec6b2b
+outputs\part2\data\full_audit_ridge_01fb9742.npz,input-notebook2,Notebook 2 full-sample audit file used here,6d02f81e44c7acfd
+outputs\part2\data\full_audit_ridge_01fb9742_replicates.parquet,input-notebook2,Notebook 2 full-sample audit file used here,2d2c6338f67cf722
+outputs\part2\data\full_audit_ridge_01fb9742.json,input-notebook2,Notebook 2 full-sample audit file used here,4a1e47ae12fc760a
+outputs\part2\data\full_audit_rf_01fb9742.npz,input-notebook2,Notebook 2 full-sample audit file used here,3e1b9de5c32ef2a8
+outputs\part2\data\full_audit_rf_01fb9742_replicates.parquet,input-notebook2,Notebook 2 full-sample audit file used here,95d025083c6ac894
+outputs\part2\data\full_audit_rf_01fb9742.json,input-notebook2,Notebook 2 full-sample audit file used here,8c49ef5f3a362bee
+outputs\part2\data\full_audit_hgb_01fb9742.npz,input-notebook2,Notebook 2 full-sample audit file used here,b077e1d614ee1ce8
+outputs\part2\data\full_audit_hgb_01fb9742_replicates.parquet,input-notebook2,Notebook 2 full-sample audit file used here,98cfdeeb4dff0b65
+outputs\part2\data\full_audit_hgb_01fb9742.json,input-notebook2,Notebook 2 full-sample audit file used here,6483841a3db0ee85
+outputs\part3\tables\table9_external_performance.csv,table,"External performance in eICU-CRD with hospital-cluster bootstrap intervals, development OOB reference and refit range",6f4e2f1c7ce92ca3
+outputs\part3\figures\p3_fig1_external_performance.png,figure-png,"External discrimination, calibration and net benefit in eICU-CRD",bd849a064a2e4ebe
+outputs\part3\figures\p3_fig1_external_performance.pdf,figure-pdf,"External discrimination, calibration and net benefit in eICU-CRD",0baa7446c4c1dc27
+outputs\part3\tables\table10_instability_transport.csv,table,Instability in MIMIC-IV (out-of-bag) and eICU-CRD and the instability transport ratio,ea616dad1b8ff547
+outputs\part3\tables\table10b_outcomes_by_stability.csv,table,Observed and predicted mortality in decision-stable and decision-unstable eICU-CRD patients,32afbf8b22f0f66a
+outputs\part3\figures\p3_fig2_instability_transport.png,figure-png,Instability in development and external populations and the instability transport ratio,61847d9446d095d2
+outputs\part3\figures\p3_fig2_instability_transport.pdf,figure-pdf,Instability in development and external populations and the instability transport ratio,5d2d8b462a59c48b
+outputs\part3\tables\tableS_p3_hospital_level.csv,table,Hospital-level performance and instability (hospitals identified by size rank only),e7c06c73bcb9e915
+outputs\part3\tables\table11_hospital_meta_analysis.csv,table,"Random-effects meta-analysis across hospitals: pooled estimate, 95% CI, 95% prediction interval, tau and I-squared",d459d4e1637a4dcb
+outputs\part3\figures\p3_fig3_hospital_heterogeneity.png,figure-png,"Hospital-level discrimination, calibration, instability transport and decision instability",da35c944d65f493e
+outputs\part3\figures\p3_fig3_hospital_heterogeneity.pdf,figure-pdf,"Hospital-level discrimination, calibration, instability transport and decision instability",c63c81b3e52af97e
+outputs\part3\figures\p3_figS1_meta_analysis_summary.png,figure-png,Random-effects summaries with confidence and prediction intervals for all model classes,bb6e19ccc0df7fb0
+outputs\part3\figures\p3_figS1_meta_analysis_summary.pdf,figure-pdf,Random-effects summaries with confidence and prediction intervals for all model classes,3ba8965b7ccd0aa0
+outputs\part3\tables\tableS_p3_failure_modes_prespecified.csv,table,Pre-specified classification with an absolute 10% limit,5fd8b99194eed1f4
+outputs\part3\figures\p3_fig4_two_failure_modes.png,figure-png,Hospital-level calibration versus risk-standardised decision instability,d40758f471d713c5
+outputs\part3\figures\p3_fig4_two_failure_modes.pdf,figure-pdf,Hospital-level calibration versus risk-standardised decision instability,aba58315f6249f20
+outputs\part3\tables\tableS_p3_failure_modes.csv,table,"Hospitals by calibration and excess decision instability (post hoc, risk-standardised)",3dca81e126c3efeb
+outputs\part3\figures\p3_figS2_flag_rate_instability.png,figure-png,Hospital flag rates of the original model and their range across refits,c8d01491fe27e870
+outputs\part3\figures\p3_figS2_flag_rate_instability.pdf,figure-pdf,Hospital flag rates of the original model and their range across refits,91fd748c05421d0c
+outputs\part3\figures\p3_figS3_hospital_calibration.png,figure-png,Calibration of the reference model in the 12 largest eICU-CRD hospitals,9a86420848ab2b48
+outputs\part3\figures\p3_figS3_hospital_calibration.pdf,figure-pdf,Calibration of the reference model in the 12 largest eICU-CRD hospitals,233d9e749646c6b6
+outputs\part3\tables\table12_instability_by_atypicality.csv,table,"Instability transport ratio, decision instability and calibration by decile of atypicality",635b223abeb25732
+outputs\part3\figures\p3_fig5_atypicality.png,figure-png,"Population difference, instability by atypicality of patients and hospitals",027ace7bed6d6ac7
+outputs\part3\figures\p3_fig5_atypicality.pdf,figure-pdf,"Population difference, instability by atypicality of patients and hospitals",2210ccfc50a4adac
+outputs\part3\tables\table12b_missingness_groups.csv,table,Missingness of each predictor group in both databases and instability transport in eICU-CRD patients with the group missing or observed,b0d843f850e5b281
+outputs\part3\tables\table12c_instability_by_missingness_pattern.csv,table,Instability transport by how common the patient's missingness pattern is in MIMIC-IV,9188d970e62b2e69
+outputs\part3\tables\tableS_p3_predictor_shift.csv,table,"Per-predictor missingness and membership AUROC of observed values, MIMIC-IV versus eICU-CRD",0dee6d109cc2fc29
+outputs\part3\figures\p3_fig5b_missingness_mechanism.png,figure-png,Missingness patterns rare in development and instability transport,98adec93f741b9cc
+outputs\part3\figures\p3_fig5b_missingness_mechanism.pdf,figure-pdf,Missingness patterns rare in development and instability transport,c0d57581d034d005
+outputs\part3\tables\tableS_p3_external_subgroups.csv,table,Instability transport ratio and decision instability by subgroup in eICU-CRD,a7b099cfd26c22be
+outputs\part3\figures\p3_fig6_external_subgroups.png,figure-png,Instability transport ratio and decision instability by subgroup in eICU-CRD,598785319f6f83d8
+outputs\part3\figures\p3_fig6_external_subgroups.pdf,figure-pdf,Instability transport ratio and decision instability by subgroup in eICU-CRD,aebd2f543ca34c5d
+outputs\part3\tables\table13_external_ground_truth.csv,table,"True instability in MIMIC-IV audit and eICU-CRD panels by development size, true and estimated ITR, bootstrap accuracy in each population",f7486201a80a4875
+outputs\part3\tables\table13b_sample_size_external.csv,table,"Decay of true instability with development size and sample size needed for stability, development versus external patients",fe29e1a20d978ae5
+outputs\part3\figures\p3_fig7_external_ground_truth.png,figure-png,"True instability by development size in development and external patients, and accuracy of the bootstrap audit externally",92486261f2f08038
+outputs\part3\figures\p3_fig7_external_ground_truth.pdf,figure-pdf,"True instability by development size in development and external patients, and accuracy of the bootstrap audit externally",83e7fb127624270d
+outputs\part3\tables\table14_deferral.csv,table,Capture of truly decision-unstable patients and residual instability under deferral strategies,1c9e8a8ae13368d2
+outputs\part3\figures\p3_fig8_deferral.png,figure-png,Deferral of decision-unstable patients: capture and residual instability by strategy,342f01c325787d58
+outputs\part3\figures\p3_fig8_deferral.pdf,figure-pdf,Deferral of decision-unstable patients: capture and residual instability by strategy,b7185a207adba6d5
+outputs\part3\tables\tableS_p3_candidate_specifications.csv,table,"Candidate specifications, audit-panel performance and Rashomon membership",eb23892c00b1aac4
+outputs\part3\tables\table15_multiplicity_vs_instability.csv,table,"Decision ambiguity in eICU-CRD from model choice (Rashomon set) and from the development sample, measured the same way",6ff61de658f00eb7
+outputs\part3\figures\p3_fig9_multiplicity_vs_instability.png,figure-png,Predictive multiplicity versus development-sample instability in eICU-CRD,c73fec6b2247fc12
+outputs\part3\figures\p3_fig9_multiplicity_vs_instability.pdf,figure-pdf,Predictive multiplicity versus development-sample instability in eICU-CRD,aa12223293a72aeb
+outputs\part3\tables\table16_sensitivity_analyses.csv,table,"Pre-specified sensitivity analyses: external performance, instability transport and decision instability",459772b13b9c7cb0
+outputs\part3\tables\tableS_p3_meta_analysis_min50.csv,table,S6: random-effects meta-analysis including hospitals with at least 50 stays,a5d9baf62edca097
+outputs\part3\figures\p3_fig10_sensitivity_analyses.png,figure-png,Pre-specified sensitivity analyses,14901aeb007f0166
+outputs\part3\figures\p3_fig10_sensitivity_analyses.pdf,figure-pdf,Pre-specified sensitivity analyses,496196b7d51708b4
+outputs\part3\tables\table17_stability_policy.csv,table,Pre-specified stability policy applied to every model in both populations,fab6d4c90593ec8c
+outputs\part3\tables\model_facts_lr.json,json,"Model facts for a model card, Logistic regression",ed0eb5816fa50d78
+outputs\part3\tables\model_facts_ridge.json,json,"Model facts for a model card, Ridge logistic regression",a51267918c0eb0d3
+outputs\part3\tables\model_facts_rf.json,json,"Model facts for a model card, Random forest",84916846b2f449fc
+outputs\part3\tables\model_facts_hgb.json,json,"Model facts for a model card, Gradient boosting",7ce518c8f0207a98
+outputs\part3\figures\p3_fig11_stability_report_card.png,figure-png,"Pre-specified stability policy: pass or fail for every check, model and population",c5672ccf0977b6a6
+outputs\part3\figures\p3_fig11_stability_report_card.pdf,figure-pdf,"Pre-specified stability policy: pass or fail for every check, model and population",57bffddc82730a0c
+outputs\part3\figures\p3_central_illustration.png,figure-png,Central illustration of the study,f2bcf311f7854e07
+outputs\part3\figures\p3_central_illustration.pdf,figure-pdf,Central illustration of the study,25b9a375336e87df
+outputs\part3\tables\results_digest.json,json,Key numbers of notebook 3 for the manuscript,3eeb9cdef6eda0c4
+outputs\part3\tables\results_digest.md,markdown,Generated results paragraph,5dc8d5de50ed9ad3
+outputs\part3\tables\table_reporting_checklist.csv,table,TRIPOD+AI and TRIPOD-Cluster checklist mapped to the three notebooks,5de1fcba66b1506c
+outputs\part3\tables\tableA1_monte_carlo_by_refits.csv,table,"Addendum: headline estimates and Monte Carlo SD by number of refits (subsets without replacement, finite-population corrected)",1279d1f6d06d100b
+outputs\part3\tables\tableA1b_monte_carlo_precision.csv,table,"Addendum: Monte Carlo SD of the reported estimates, projected to 1,000 refits, and drift with the number of refits",9ea36c9c87004346
+outputs\part3\figures\p3_addendum_figA1_monte_carlo.png,figure-png,Addendum: Monte Carlo precision of the audit by number of refits,898effe0bf68c41a
+outputs\part3\figures\p3_addendum_figA1_monte_carlo.pdf,figure-pdf,Addendum: Monte Carlo precision of the audit by number of refits,3c48a1bf9e309f6c
+outputs\part3\tables\tableA2_effective_sample_size.csv,table,Addendum: effective sample size of individual predictions in both populations,4c7b1871f7a1bc32
+outputs\part3\figures\p3_addendum_figA2_effective_sample_size.png,figure-png,Addendum: effective sample size of individual predictions,30af8df373c79a4b
+outputs\part3\figures\p3_addendum_figA2_effective_sample_size.pdf,figure-pdf,Addendum: effective sample size of individual predictions,3d477ef1ecdf09a4
+outputs\part3\tables\tableA3_threshold_tolerance_sweep.csv,table,Addendum: decision instability and DIR for every threshold from 0.05 to 0.50 and three tolerances,8ebd168eeaaf3280
+outputs\part3\figures\p3_addendum_figA3_thresholds_tolerances.png,figure-png,Addendum: decision instability across thresholds and tolerances,69b7a8da04424d90
+outputs\part3\figures\p3_addendum_figA3_thresholds_tolerances.pdf,figure-pdf,Addendum: decision instability across thresholds and tolerances,3fac9ed7a6f0eeb4
+outputs\part3\tables\tableA4_factorial_missingness.csv,table,Addendum: model class x missing-data representation x GCS motor score,a9e33e5a7526bc0b
+outputs\part3\tables\tableA4b_factorial_by_pattern.csv,table,"Addendum: factorial cells, instability transport by missingness pattern",f7566e3f21d64826
+outputs\part3\figures\p3_addendum_figA4_factorial.png,figure-png,Addendum: factorial experiment on missing-data representation,c3cfda2a590bb51b
+outputs\part3\figures\p3_addendum_figA4_factorial.pdf,figure-pdf,Addendum: factorial experiment on missing-data representation,61b35c7df9ae4fc1
+outputs\part3\tables\tableA5_transport_directions.csv,table,"Addendum: instability transport forward, reverse and over time",c6e952eddcb4ee45
+outputs\part3\tables\tableA5b_transport_directions_by_pattern.csv,table,Addendum: instability transport by missingness pattern in each direction,505013e65369049d
+outputs\part3\tables\tableA5c_hypothesis_verdicts.csv,table,Addendum: pre-stated hypotheses H1 to H3 and their verdicts,a83c7b0be35e1b52
+outputs\part3\figures\p3_addendum_figA5_transport_directions.png,figure-png,"Addendum: instability transport forward, reverse and over time",818686df18d74f2a
+outputs\part3\figures\p3_addendum_figA5_transport_directions.pdf,figure-pdf,"Addendum: instability transport forward, reverse and over time",be2c0b59fac0fdd1
+outputs\part3\tables\tableA6_extended_ground_truth.csv,table,Addendum: ground truth from 200 independent samples and bootstrap accuracy in 20 audited samples,3be5c195f4f5627c
+outputs\part3\tables\tableA6b_extended_ground_truth_by_sample.csv,table,Addendum: bootstrap accuracy and deferral for every audited sample,3a703c38069f003c
+outputs\part3\figures\p3_addendum_figA6_extended_ground_truth.png,figure-png,Addendum: extended ground truth and bootstrap accuracy,3c5212d8854a1b0f
+outputs\part3\figures\p3_addendum_figA6_extended_ground_truth.pdf,figure-pdf,Addendum: extended ground truth and bootstrap accuracy,f7fc2c34af7a9a64
+outputs\part3\tables\tableA7_two_way_pairwise_disagreement.csv,table,"Addendum: pairwise decision disagreement, model choice versus development sample (two-way multiverse)",f8b719b5e55a4aaf
+outputs\part3\tables\tableA7d_two_way_any_disagreement.csv,table,Addendum: any disagreement among k specifications versus k resamples,6f6174fa64041b6c
+outputs\part3\tables\tableA7b_two_way_variance_components.csv,table,Addendum: variance components of predicted log-odds,e717bb87bd3e1cf2
+outputs\part3\tables\tableA7c_two_way_variance_by_group.csv,table,Addendum: variance components by risk decile and missingness pattern,459b02d306756da5
+outputs\part3\figures\p3_addendum_figA7_two_way_multiverse.png,figure-png,Addendum: symmetric comparison of model-choice and sample ambiguity,007254dd9425b035
+outputs\part3\figures\p3_addendum_figA7_two_way_multiverse.pdf,figure-pdf,Addendum: symmetric comparison of model-choice and sample ambiguity,9f613d8f14e18c71
+outputs\part3\tables\tableA8_simulation.csv,table,"Addendum: simulation study, bootstrap and true instability transport ratio and external performance",1d97847cd70892f7
+outputs\part3\figures\p3_addendum_figA8_simulation.png,figure-png,Addendum: simulation study with known data-generating mechanisms,c178b7c0bc12ae82
+outputs\part3\figures\p3_addendum_figA8_simulation.pdf,figure-pdf,Addendum: simulation study with known data-generating mechanisms,3b781d0f72fd0f15
+outputs\part3\logs\environment_lock.txt,environment,Exact versions of all installed Python packages,bc6c7e60a7166fc7
+outputs\part3\tables\results_digest_addendum.md,markdown,Generated addendum results paragraph,ddb18c1ffac312e3
+outputs\part3\tables\results_digest_addendum.json,json,Addendum: key numbers for responses to review,c3cd17bd9710d85e

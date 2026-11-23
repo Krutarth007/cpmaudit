@@ -1,0 +1,71 @@
+{
+  "model": "Pipeline",
+  "development_n": 39966,
+  "development_events": 3888,
+  "bootstrap": "simple",
+  "replicates": 200,
+  "instability_index": 0.007896844273792837,
+  "mape_p90": 0.020721644875931495,
+  "interval_width_median": 0.019751632260158657,
+  "thresholds": {
+    "0.1": {
+      "flagged_share": 0.2728319071210529,
+      "mean_cii": 0.023439173297302707,
+      "share_flip_prone": 0.07498874042936496
+    },
+    "0.2": {
+      "flagged_share": 0.13051093429415003,
+      "mean_cii": 0.014807461342140822,
+      "share_flip_prone": 0.04724015413101136
+    },
+    "0.3": {
+      "flagged_share": 0.07523895311014363,
+      "mean_cii": 0.009903543011559827,
+      "share_flip_prone": 0.030951308612320472
+    }
+  },
+  "package_version": "0.1.0",
+  "optimism_corrected": {
+    "auroc": 0.8534970648376057,
+    "calibration_slope": 0.9991130051713367,
+    "calibration_intercept": -0.0002689413606510978,
+    "brier": 0.06977330682091797
+  },
+  "external_instability_index": 0.02693150810719906,
+  "policy_passed": false,
+  "policy_failed_checks": [
+    "share_flip_prone@0.1",
+    "instability_index",
+    "mape_p90",
+    "share_wide_interval",
+    "share_flip_prone@0.1",
+    "share_flip_prone@0.2",
+    "share_flip_prone@0.3"
+  ],
+  "external_population": "eICU-CRD, 94114 patients, 205 hospitals",
+  "external_auroc": 0.808278198232598,
+  "external_auroc_ci": [
+    0.7993056399728675,
+    0.8165775300277076
+  ],
+  "external_oe": 0.8057139198085606,
+  "hospital_auroc_prediction_interval": [
+    0.760151965308651,
+    0.8546302688378792
+  ],
+  "hospital_oe_prediction_interval": [
+    0.3639228496515122,
+    1.5185287174593924
+  ],
+  "instability_transport_ratio": [
+    2.926073477083349,
+    2.677451305714725,
+    3.182686060843441
+  ],
+  "external_deferral_workload_at_primary_threshold": 0.25111035552627664,
+  "decision_instability_ratio": [
+    2.8564054265041245,
+    2.6038514884696657,
+    3.131022371610742
+  ]
+}

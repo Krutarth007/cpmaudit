@@ -1,0 +1,5 @@
+model,hospitals,spearman_abs_log_oe_vs_log_dir,"calibrated, no excess","calibrated, excess instability","miscalibrated, no excess","miscalibrated, excess instability",share_of_calibrated_with_excess,share_of_all_with_excess
+Logistic regression,152,0.219,5,40,7,100,0.889,0.921
+Ridge logistic regression,152,0.207,6,39,8,99,0.867,0.908
+Random forest,152,0.042,54,0,98,0,0.0,0.0
+Gradient boosting,152,0.092,38,9,86,19,0.191,0.184

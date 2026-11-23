@@ -1,0 +1,5 @@
+model,hospitals,limit,calibrated and below limit,calibrated and above limit,miscalibrated and below limit,miscalibrated and above limit
+Logistic regression,152,0.1,2,43,5,102
+Ridge logistic regression,152,0.1,4,41,8,99
+Random forest,152,0.1,2,52,0,98
+Gradient boosting,152,0.1,0,47,0,105

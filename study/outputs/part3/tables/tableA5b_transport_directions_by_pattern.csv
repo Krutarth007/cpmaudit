@@ -1,0 +1,45 @@
+analysis,model,pattern,patients,share,itr,dir,unstable_per_1000
+Forward: MIMIC-IV to eICU-CRD,Logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.08636,1.0688,82.69076
+Forward: MIMIC-IV to eICU-CRD,Logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.22963,1.23644,104.29338
+Forward: MIMIC-IV to eICU-CRD,Logistic regression,Rare (under 0.1%),15593,0.16568,4.53362,4.30354,424.67774
+Forward: MIMIC-IV to eICU-CRD,Logistic regression,Never seen in MIMIC-IV,28824,0.30627,5.2533,4.46155,428.73994
+Reverse: eICU-CRD to MIMIC-IV,Logistic regression,Common in MIMIC-IV (1% or more),27260,0.68208,0.94768,0.93782,40.57227
+Reverse: eICU-CRD to MIMIC-IV,Logistic regression,Uncommon (0.1% to 1%),5299,0.13259,1.12143,1.14789,69.25835
+Reverse: eICU-CRD to MIMIC-IV,Logistic regression,Rare (under 0.1%),6495,0.16251,1.20227,1.1767,84.06467
+Reverse: eICU-CRD to MIMIC-IV,Logistic regression,Never seen in MIMIC-IV,912,0.02282,1.7308,1.6944,119.51754
+Temporal: MIMIC-IV earlier to 2017 - 2019,Logistic regression,Common in MIMIC-IV (1% or more),7962,0.92442,0.9436,0.94299,77.2419
+Temporal: MIMIC-IV earlier to 2017 - 2019,Logistic regression,Uncommon (0.1% to 1%),490,0.05689,1.17979,1.31931,134.69388
+Temporal: MIMIC-IV earlier to 2017 - 2019,Logistic regression,Rare (under 0.1%),130,0.01509,2.46275,2.32109,253.84615
+Forward: MIMIC-IV to eICU-CRD,Ridge logistic regression,Common in MIMIC-IV (1% or more),38517,0.40926,1.08129,1.07402,82.32728
+Forward: MIMIC-IV to eICU-CRD,Ridge logistic regression,Uncommon (0.1% to 1%),11180,0.11879,1.20936,1.21744,102.05725
+Forward: MIMIC-IV to eICU-CRD,Ridge logistic regression,Rare (under 0.1%),15593,0.16568,4.04082,4.4732,437.24748
+Forward: MIMIC-IV to eICU-CRD,Ridge logistic regression,Never seen in MIMIC-IV,28824,0.30627,4.5905,4.52934,436.96225
+Reverse: eICU-CRD to MIMIC-IV,Ridge logistic regression,Common in MIMIC-IV (1% or more),27260,0.68208,0.95322,0.94799,39.61849
+Reverse: eICU-CRD to MIMIC-IV,Ridge logistic regression,Uncommon (0.1% to 1%),5299,0.13259,1.11554,1.0836,63.59691
+Reverse: eICU-CRD to MIMIC-IV,Ridge logistic regression,Rare (under 0.1%),6495,0.16251,1.24761,1.23628,86.68206
+Reverse: eICU-CRD to MIMIC-IV,Ridge logistic regression,Never seen in MIMIC-IV,912,0.02282,1.77922,1.66559,115.13158
+Temporal: MIMIC-IV earlier to 2017 - 2019,Ridge logistic regression,Common in MIMIC-IV (1% or more),7962,0.92442,0.95405,0.92939,73.72519
+Temporal: MIMIC-IV earlier to 2017 - 2019,Ridge logistic regression,Uncommon (0.1% to 1%),490,0.05689,1.21208,1.30957,126.53061
+Temporal: MIMIC-IV earlier to 2017 - 2019,Ridge logistic regression,Rare (under 0.1%),130,0.01509,2.45752,3.01927,246.15385
+Forward: MIMIC-IV to eICU-CRD,Random forest,Common in MIMIC-IV (1% or more),38517,0.40926,0.99113,0.98335,135.7842
+Forward: MIMIC-IV to eICU-CRD,Random forest,Uncommon (0.1% to 1%),11180,0.11879,1.00175,1.00335,152.9517
+Forward: MIMIC-IV to eICU-CRD,Random forest,Rare (under 0.1%),15593,0.16568,0.96256,0.97136,156.86526
+Forward: MIMIC-IV to eICU-CRD,Random forest,Never seen in MIMIC-IV,28824,0.30627,0.97268,0.96395,166.80544
+Reverse: eICU-CRD to MIMIC-IV,Random forest,Common in MIMIC-IV (1% or more),27260,0.68208,0.98549,0.96688,106.63977
+Reverse: eICU-CRD to MIMIC-IV,Random forest,Uncommon (0.1% to 1%),5299,0.13259,0.98089,0.93966,119.26779
+Reverse: eICU-CRD to MIMIC-IV,Random forest,Rare (under 0.1%),6495,0.16251,0.93479,0.9291,157.04388
+Reverse: eICU-CRD to MIMIC-IV,Random forest,Never seen in MIMIC-IV,912,0.02282,0.9325,0.90866,174.34211
+Temporal: MIMIC-IV earlier to 2017 - 2019,Random forest,Common in MIMIC-IV (1% or more),7962,0.92442,1.00406,0.98669,100.85406
+Temporal: MIMIC-IV earlier to 2017 - 2019,Random forest,Uncommon (0.1% to 1%),490,0.05689,1.03647,1.02911,130.61224
+Temporal: MIMIC-IV earlier to 2017 - 2019,Random forest,Rare (under 0.1%),130,0.01509,1.06651,1.07294,169.23077
+Forward: MIMIC-IV to eICU-CRD,Gradient boosting,Common in MIMIC-IV (1% or more),38517,0.40926,1.04439,1.03276,184.59382
+Forward: MIMIC-IV to eICU-CRD,Gradient boosting,Uncommon (0.1% to 1%),11180,0.11879,1.09257,1.05932,182.37925
+Forward: MIMIC-IV to eICU-CRD,Gradient boosting,Rare (under 0.1%),15593,0.16568,1.12039,1.09715,260.62977
+Forward: MIMIC-IV to eICU-CRD,Gradient boosting,Never seen in MIMIC-IV,28824,0.30627,1.15912,1.142,275.36081
+Reverse: eICU-CRD to MIMIC-IV,Gradient boosting,Common in MIMIC-IV (1% or more),27260,0.68208,1.0068,0.97908,102.34776
+Reverse: eICU-CRD to MIMIC-IV,Gradient boosting,Uncommon (0.1% to 1%),5299,0.13259,1.01908,0.99408,128.13738
+Reverse: eICU-CRD to MIMIC-IV,Gradient boosting,Rare (under 0.1%),6495,0.16251,1.07475,1.05603,208.00616
+Reverse: eICU-CRD to MIMIC-IV,Gradient boosting,Never seen in MIMIC-IV,912,0.02282,1.12662,1.08733,220.39474
+Temporal: MIMIC-IV earlier to 2017 - 2019,Gradient boosting,Common in MIMIC-IV (1% or more),7962,0.92442,1.00105,0.98704,145.69204
+Temporal: MIMIC-IV earlier to 2017 - 2019,Gradient boosting,Uncommon (0.1% to 1%),490,0.05689,1.04429,0.96457,175.5102
+Temporal: MIMIC-IV earlier to 2017 - 2019,Gradient boosting,Rare (under 0.1%),130,0.01509,1.2204,1.2085,246.15385

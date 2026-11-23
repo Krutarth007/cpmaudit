@@ -1,0 +1,4 @@
+set,models,share_Specification,share_Development sample,share_Interaction,median_sd_Specification,median_sd_Development sample,median_sd_Interaction
+Rashomon set (AUROC within 0.01),5,0.5125,0.1564,0.3311,0.4371,0.2198,0.3227
+Rashomon set (AUROC within 0.02),8,0.6003,0.1018,0.2979,0.4818,0.1746,0.3023
+All 12 specifications,12,0.6805,0.083,0.2365,0.5458,0.1666,0.2977

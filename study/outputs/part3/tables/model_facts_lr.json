@@ -1,0 +1,72 @@
+{
+  "model": "Pipeline",
+  "development_n": 39966,
+  "development_events": 3888,
+  "bootstrap": "simple",
+  "replicates": 200,
+  "instability_index": 0.008279472062303492,
+  "mape_p90": 0.0217356717781816,
+  "interval_width_median": 0.020193748362362384,
+  "thresholds": {
+    "0.1": {
+      "flagged_share": 0.2728569283891308,
+      "mean_cii": 0.02416453985888005,
+      "share_flip_prone": 0.07626482510133614
+    },
+    "0.2": {
+      "flagged_share": 0.1319371465745884,
+      "mean_cii": 0.015425861982685283,
+      "share_flip_prone": 0.0486913876795276
+    },
+    "0.3": {
+      "flagged_share": 0.07601461242055747,
+      "mean_cii": 0.010413851774007908,
+      "share_flip_prone": 0.03227743582044738
+    }
+  },
+  "package_version": "0.1.0",
+  "optimism_corrected": {
+    "auroc": 0.8533169111280011,
+    "calibration_slope": 0.9850247097296225,
+    "calibration_intercept": -9.540499246842959e-05,
+    "brier": 0.0698291019845694
+  },
+  "external_instability_index": 0.02834556548205736,
+  "policy_passed": false,
+  "policy_failed_checks": [
+    "share_wide_interval",
+    "share_flip_prone@0.1",
+    "instability_index",
+    "mape_p90",
+    "share_wide_interval",
+    "share_flip_prone@0.1",
+    "share_flip_prone@0.2",
+    "share_flip_prone@0.3"
+  ],
+  "external_population": "eICU-CRD, 94114 patients, 205 hospitals",
+  "external_auroc": 0.8073991900526185,
+  "external_auroc_ci": [
+    0.7980452602452021,
+    0.8161879889789398
+  ],
+  "external_oe": 0.8002473188264819,
+  "hospital_auroc_prediction_interval": [
+    0.7590223852696663,
+    0.8551477007494218
+  ],
+  "hospital_oe_prediction_interval": [
+    0.3571969780090876,
+    1.5354784047629775
+  ],
+  "instability_transport_ratio": [
+    3.0402715097530906,
+    2.747999712836045,
+    3.3428475348953177
+  ],
+  "external_deferral_workload_at_primary_threshold": 0.24977155364770384,
+  "decision_instability_ratio": [
+    2.806173795626431,
+    2.5651609651404255,
+    3.0775556017076426
+  ]
+}

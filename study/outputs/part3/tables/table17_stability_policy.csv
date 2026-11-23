@@ -1,0 +1,57 @@
+population,check,value,limit,passed,model
+all,replicates,200.0,200.0,True,Logistic regression
+development,instability_index,0.00828,0.02,True,Logistic regression
+development,mape_p90,0.02174,0.05,True,Logistic regression
+development,share_wide_interval,0.10639,0.1,False,Logistic regression
+development,share_flip_prone@0.1,0.07626,0.05,False,Logistic regression
+development,share_flip_prone@0.2,0.04869,0.05,True,Logistic regression
+development,share_flip_prone@0.3,0.03228,0.05,True,Logistic regression
+external,instability_index,0.02835,0.02,False,Logistic regression
+external,mape_p90,0.08069,0.05,False,Logistic regression
+external,share_wide_interval,0.3788,0.1,False,Logistic regression
+external,share_flip_prone@0.1,0.24977,0.05,False,Logistic regression
+external,share_flip_prone@0.2,0.16842,0.05,False,Logistic regression
+external,share_flip_prone@0.3,0.11496,0.05,False,Logistic regression
+development,abs_calibration_slope_optimism,0.01613,0.1,True,Logistic regression
+all,replicates,200.0,200.0,True,Ridge logistic regression
+development,instability_index,0.0079,0.02,True,Ridge logistic regression
+development,mape_p90,0.02072,0.05,True,Ridge logistic regression
+development,share_wide_interval,0.09863,0.1,True,Ridge logistic regression
+development,share_flip_prone@0.1,0.07499,0.05,False,Ridge logistic regression
+development,share_flip_prone@0.2,0.04724,0.05,True,Ridge logistic regression
+development,share_flip_prone@0.3,0.03095,0.05,True,Ridge logistic regression
+external,instability_index,0.02693,0.02,False,Ridge logistic regression
+external,mape_p90,0.07801,0.05,False,Ridge logistic regression
+external,share_wide_interval,0.3727,0.1,False,Ridge logistic regression
+external,share_flip_prone@0.1,0.25111,0.05,False,Ridge logistic regression
+external,share_flip_prone@0.2,0.16508,0.05,False,Ridge logistic regression
+external,share_flip_prone@0.3,0.11094,0.05,False,Ridge logistic regression
+development,abs_calibration_slope_optimism,0.01534,0.1,True,Ridge logistic regression
+all,replicates,200.0,200.0,True,Random forest
+development,instability_index,0.01502,0.02,True,Random forest
+development,mape_p90,0.03912,0.05,True,Random forest
+development,share_wide_interval,0.18656,0.1,False,Random forest
+development,share_flip_prone@0.1,0.13331,0.05,False,Random forest
+development,share_flip_prone@0.2,0.10534,0.05,False,Random forest
+development,share_flip_prone@0.3,0.07056,0.05,False,Random forest
+external,instability_index,0.01319,0.02,True,Random forest
+external,mape_p90,0.02236,0.05,True,Random forest
+external,share_wide_interval,0.0602,0.1,True,Random forest
+external,share_flip_prone@0.1,0.15335,0.05,False,Random forest
+external,share_flip_prone@0.2,0.10245,0.05,False,Random forest
+external,share_flip_prone@0.3,0.04163,0.05,True,Random forest
+development,abs_calibration_slope_optimism,1.19861,0.1,False,Random forest
+all,replicates,200.0,200.0,True,Gradient boosting
+development,instability_index,0.02385,0.02,False,Gradient boosting
+development,mape_p90,0.07453,0.05,False,Gradient boosting
+development,share_wide_interval,0.30596,0.1,False,Gradient boosting
+development,share_flip_prone@0.1,0.15233,0.05,False,Gradient boosting
+development,share_flip_prone@0.2,0.1212,0.05,False,Gradient boosting
+development,share_flip_prone@0.3,0.09868,0.05,False,Gradient boosting
+external,instability_index,0.0322,0.02,False,Gradient boosting
+external,mape_p90,0.08242,0.05,False,Gradient boosting
+external,share_wide_interval,0.46423,0.1,False,Gradient boosting
+external,share_flip_prone@0.1,0.22794,0.05,False,Gradient boosting
+external,share_flip_prone@0.2,0.18559,0.05,False,Gradient boosting
+external,share_flip_prone@0.3,0.1363,0.05,False,Gradient boosting
+development,abs_calibration_slope_optimism,0.4733,0.1,False,Gradient boosting

@@ -1,0 +1,43 @@
+set,by,level,Specification,Development sample,Interaction
+Rashomon set (AUROC within 0.01),risk decile,1,0.6172,0.0598,0.3229
+Rashomon set (AUROC within 0.01),risk decile,2,0.6559,0.0892,0.2549
+Rashomon set (AUROC within 0.01),risk decile,3,0.6655,0.1072,0.2273
+Rashomon set (AUROC within 0.01),risk decile,4,0.6346,0.1266,0.2388
+Rashomon set (AUROC within 0.01),risk decile,5,0.5811,0.1503,0.2686
+Rashomon set (AUROC within 0.01),risk decile,6,0.511,0.1744,0.3146
+Rashomon set (AUROC within 0.01),risk decile,7,0.4228,0.2035,0.3736
+Rashomon set (AUROC within 0.01),risk decile,8,0.3272,0.2308,0.442
+Rashomon set (AUROC within 0.01),risk decile,9,0.2779,0.2388,0.4833
+Rashomon set (AUROC within 0.01),risk decile,10,0.4322,0.1828,0.385
+Rashomon set (AUROC within 0.01),missingness pattern,Common in MIMIC-IV (1% or more),0.5266,0.1512,0.3222
+Rashomon set (AUROC within 0.01),missingness pattern,Uncommon (0.1% to 1%),0.5703,0.1407,0.2891
+Rashomon set (AUROC within 0.01),missingness pattern,Rare (under 0.1%),0.4793,0.1668,0.3538
+Rashomon set (AUROC within 0.01),missingness pattern,Never seen in MIMIC-IV,0.4894,0.1636,0.347
+Rashomon set (AUROC within 0.02),risk decile,1,0.6868,0.0526,0.2606
+Rashomon set (AUROC within 0.02),risk decile,2,0.7249,0.0669,0.2082
+Rashomon set (AUROC within 0.02),risk decile,3,0.7232,0.0762,0.2006
+Rashomon set (AUROC within 0.02),risk decile,4,0.6931,0.0859,0.221
+Rashomon set (AUROC within 0.02),risk decile,5,0.6426,0.1006,0.2568
+Rashomon set (AUROC within 0.02),risk decile,6,0.5771,0.1161,0.3069
+Rashomon set (AUROC within 0.02),risk decile,7,0.514,0.1304,0.3556
+Rashomon set (AUROC within 0.02),risk decile,8,0.4433,0.144,0.4127
+Rashomon set (AUROC within 0.02),risk decile,9,0.4249,0.143,0.4322
+Rashomon set (AUROC within 0.02),risk decile,10,0.5734,0.1026,0.3241
+Rashomon set (AUROC within 0.02),missingness pattern,Common in MIMIC-IV (1% or more),0.6133,0.1085,0.2782
+Rashomon set (AUROC within 0.02),missingness pattern,Uncommon (0.1% to 1%),0.6393,0.1055,0.2552
+Rashomon set (AUROC within 0.02),missingness pattern,Rare (under 0.1%),0.5945,0.0952,0.3103
+Rashomon set (AUROC within 0.02),missingness pattern,Never seen in MIMIC-IV,0.571,0.0951,0.3339
+All 12 specifications,risk decile,1,0.7491,0.0413,0.2096
+All 12 specifications,risk decile,2,0.7541,0.0561,0.1898
+All 12 specifications,risk decile,3,0.7461,0.0665,0.1874
+All 12 specifications,risk decile,4,0.7234,0.0751,0.2015
+All 12 specifications,risk decile,5,0.6994,0.0823,0.2183
+All 12 specifications,risk decile,6,0.663,0.0932,0.2438
+All 12 specifications,risk decile,7,0.6347,0.1004,0.265
+All 12 specifications,risk decile,8,0.5993,0.1094,0.2913
+All 12 specifications,risk decile,9,0.5751,0.1146,0.3103
+All 12 specifications,risk decile,10,0.6609,0.0909,0.2482
+All 12 specifications,missingness pattern,Common in MIMIC-IV (1% or more),0.6986,0.0726,0.2288
+All 12 specifications,missingness pattern,Uncommon (0.1% to 1%),0.7005,0.0806,0.219
+All 12 specifications,missingness pattern,Rare (under 0.1%),0.7108,0.0807,0.2085
+All 12 specifications,missingness pattern,Never seen in MIMIC-IV,0.6322,0.099,0.2688

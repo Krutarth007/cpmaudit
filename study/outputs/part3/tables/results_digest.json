@@ -1,0 +1,561 @@
+{
+  "preset": "full",
+  "notebook2_preset": "full",
+  "n_development": 39966,
+  "n_external": 94114,
+  "events_external": 8753,
+  "hospitals_external": 205,
+  "hospitals_meta": 153,
+  "membership_auroc": 0.9982457335159435,
+  "membership_auroc_missingness_only": 0.90562097770567,
+  "primary_threshold": 0.1,
+  "analytic_minimum_n": 3906,
+  "focus_n": 3906,
+  "models": {
+    "lr": {
+      "external_auroc": [
+        0.8073991900526185,
+        0.7980452602452021,
+        0.8161879889789398
+      ],
+      "external_oe": [
+        0.8002473188264819,
+        0.7354694296316914,
+        0.8645401181312773
+      ],
+      "external_slope": [
+        0.7584410007719635,
+        0.7248380025203914,
+        0.7939430196788994
+      ],
+      "development_auroc_oob": 0.8513630577590631,
+      "itr": [
+        3.0402715097530906,
+        2.747999712836045,
+        3.3428475348953177
+      ],
+      "unstable_per_1000_development": 77.14056948406144,
+      "unstable_per_1000_external": 249.77155364770385,
+      "hospital_auroc_pi": [
+        0.8117533422222024,
+        0.7590223852696663,
+        0.8551477007494218
+      ],
+      "hospital_oe_pi": [
+        0.7405864203315844,
+        0.3571969780090876,
+        1.5354784047629775
+      ],
+      "hospital_itr_pi": [
+        2.6687111545179243,
+        1.0148988691716223,
+        7.017466904915862
+      ],
+      "decision_instability_ratio": [
+        2.806173795626431,
+        2.5651609651404255,
+        3.0775556017076426
+      ],
+      "calibrated_hospitals_with_excess_instability": [
+        40,
+        45
+      ],
+      "hospitals_with_excess_instability": [
+        140,
+        152
+      ],
+      "spearman_calibration_vs_instability": 0.21865239647619245,
+      "itr_by_missingness_pattern": {
+        "Common in MIMIC-IV (1% or more)": [
+          1.086527852086032,
+          1.0717594790516018,
+          1.1046717650384144,
+          0.4092589837856217
+        ],
+        "Uncommon (0.1% to 1%)": [
+          1.2420782409641808,
+          1.2258422960350972,
+          1.260820697248827,
+          0.11879210319399877
+        ],
+        "Rare (under 0.1%)": [
+          4.256949328294216,
+          4.074878351324551,
+          4.490554050145161,
+          0.1656820451792507
+        ],
+        "Never seen in MIMIC-IV": [
+          4.980235109539145,
+          4.736872235389392,
+          5.237881314583227,
+          0.30626686784112883
+        ]
+      },
+      "s7_itr_without_indicators": 1.134899471251791,
+      "deferral_at_20_percent": {
+        "bootstrap": 0.32861133639722445,
+        "distance": 0.2782734072271785,
+        "oracle": 0.36045778138235557,
+        "random": 0.199693610885825
+      },
+      "atypicality_spearman_patient": 0.5595297373739907,
+      "atypicality_spearman_hospital": 0.7431144706686501,
+      "true_itr_at_focus_n": 3.03501299472511,
+      "bootstrap_itr_at_focus_n": 2.4839674262716893,
+      "bootstrap_ratio_external_at_focus_n": 0.825469150671702,
+      "bootstrap_ratio_development_at_focus_n": 1.00052876419161,
+      "flag_sensitivity_external_at_focus_n": 0.671154366044877,
+      "flag_ppv_external_at_focus_n": 0.8815536431366585,
+      "deferral_at_bootstrap_flag_rate": {
+        "bootstrap": {
+          "deferred": 0.41749,
+          "capture": 0.671154366044877,
+          "residual_per_1000": 287.27263230712026
+        },
+        "distance": {
+          "deferred": 0.41749,
+          "capture": 0.46805442912498874,
+          "residual_per_1000": 504.03489342229034
+        },
+        "oracle": {
+          "deferred": 0.41749,
+          "capture": 0.7524375957465981,
+          "residual_per_1000": 205.0674276537427
+        },
+        "random": {
+          "deferred": 0.41749,
+          "capture": 0.41786068306749574,
+          "residual_per_1000": 554.5132292760263
+        }
+      },
+      "decay_exponent_development": 0.5231465411830354,
+      "decay_exponent_external": 0.11566742994494346,
+      "policy_passed": false
+    },
+    "ridge": {
+      "external_auroc": [
+        0.808278198232598,
+        0.7993056399728675,
+        0.8165775300277076
+      ],
+      "external_oe": [
+        0.8057139198085606,
+        0.7461350575649505,
+        0.8616892927479177
+      ],
+      "external_slope": [
+        0.7780047878702581,
+        0.7471707393694959,
+        0.8110984535180361
+      ],
+      "development_auroc_oob": 0.8519508159387142,
+      "itr": [
+        2.926073477083349,
+        2.677451305714725,
+        3.182686060843441
+      ],
+      "unstable_per_1000_development": 75.63929339938947,
+      "unstable_per_1000_external": 251.11035552627663,
+      "hospital_auroc_pi": [
+        0.8119072174194564,
+        0.760151965308651,
+        0.8546302688378792
+      ],
+      "hospital_oe_pi": [
+        0.7433890624265858,
+        0.3639228496515122,
+        1.5185287174593924
+      ],
+      "hospital_itr_pi": [
+        2.6062003219971013,
+        0.990075424610884,
+        6.86036634132927
+      ],
+      "decision_instability_ratio": [
+        2.8564054265041245,
+        2.6038514884696657,
+        3.131022371610742
+      ],
+      "calibrated_hospitals_with_excess_instability": [
+        39,
+        45
+      ],
+      "hospitals_with_excess_instability": [
+        138,
+        152
+      ],
+      "spearman_calibration_vs_instability": 0.20747134685174173,
+      "itr_by_missingness_pattern": {
+        "Common in MIMIC-IV (1% or more)": [
+          1.0812870757877011,
+          1.0670311013857239,
+          1.0986897372085858,
+          0.4092589837856217
+        ],
+        "Uncommon (0.1% to 1%)": [
+          1.2174029179038854,
+          1.2013754622227888,
+          1.2361775637762884,
+          0.11879210319399877
+        ],
+        "Rare (under 0.1%)": [
+          4.171716760810693,
+          4.040735102090764,
+          4.341487465967564,
+          0.1656820451792507
+        ],
+        "Never seen in MIMIC-IV": [
+          4.674734441232825,
+          4.450097306733678,
+          4.940952381195129,
+          0.30626686784112883
+        ]
+      },
+      "s7_itr_without_indicators": 1.146951888393532,
+      "deferral_at_20_percent": {
+        "bootstrap": 0.3564875993488461,
+        "distance": 0.30008618213157134,
+        "oracle": 0.3830316958728335,
+        "random": 0.20057454754380927
+      },
+      "atypicality_spearman_patient": 0.5689527222612438,
+      "atypicality_spearman_hospital": 0.7699764116172785,
+      "true_itr_at_focus_n": 3.1045974421215905,
+      "bootstrap_itr_at_focus_n": 2.5294509291960163,
+      "bootstrap_ratio_external_at_focus_n": 1.0115134516537627,
+      "bootstrap_ratio_development_at_focus_n": 1.1189416797294196,
+      "flag_sensitivity_external_at_focus_n": 0.7282581633630183,
+      "flag_ppv_external_at_focus_n": 0.8961665498339849,
+      "deferral_at_bootstrap_flag_rate": {
+        "bootstrap": {
+          "deferred": 0.42363999999999996,
+          "capture": 0.7282581633630183,
+          "residual_per_1000": 231.71655135619008
+        },
+        "distance": {
+          "deferred": 0.42363999999999996,
+          "capture": 0.509834338791535,
+          "residual_per_1000": 439.6439374473475
+        },
+        "oracle": {
+          "deferred": 0.42363999999999996,
+          "capture": 0.8113377381978358,
+          "residual_per_1000": 153.42140721449417
+        },
+        "random": {
+          "deferred": 0.42363999999999996,
+          "capture": 0.42614191324332096,
+          "residual_per_1000": 520.0198233518408
+        }
+      },
+      "decay_exponent_development": 0.27772897648343164,
+      "decay_exponent_external": -0.075293555571654,
+      "policy_passed": false
+    },
+    "rf": {
+      "external_auroc": [
+        0.8352530960193091,
+        0.8289739836421163,
+        0.8412998596770076
+      ],
+      "external_oe": [
+        0.7826344270574221,
+        0.737679180721522,
+        0.8250956805989115
+      ],
+      "external_slope": [
+        1.5599893490143777,
+        1.5090356875113562,
+        1.61709824683532
+      ],
+      "development_auroc_oob": 0.8716435776405576,
+      "itr": [
+        0.9780559875058893,
+        0.9732990329629939,
+        0.9821705083802196
+      ],
+      "unstable_per_1000_development": 113.09613171195517,
+      "unstable_per_1000_external": 152.82529698025797,
+      "hospital_auroc_pi": [
+        0.8300181565664211,
+        0.7858714867567541,
+        0.8666080467602186
+      ],
+      "hospital_oe_pi": [
+        0.7178857735692425,
+        0.4171271880745812,
+        1.2354984250054801
+      ],
+      "hospital_itr_pi": [
+        0.9745955597763215,
+        0.9315438331607092,
+        1.01963694173461
+      ],
+      "decision_instability_ratio": [
+        0.9772393846036725,
+        0.9702529837010356,
+        0.983720320945249
+      ],
+      "calibrated_hospitals_with_excess_instability": [
+        0,
+        54
+      ],
+      "hospitals_with_excess_instability": [
+        0,
+        152
+      ],
+      "spearman_calibration_vs_instability": 0.04237317094840724,
+      "itr_by_missingness_pattern": {
+        "Common in MIMIC-IV (1% or more)": [
+          0.9887722861622681,
+          0.9865706048200868,
+          0.9912494358261554,
+          0.4092589837856217
+        ],
+        "Uncommon (0.1% to 1%)": [
+          0.9974994273299166,
+          0.9933040382831093,
+          1.001552104751168,
+          0.11879210319399877
+        ],
+        "Rare (under 0.1%)": [
+          0.9586009318832748,
+          0.9516375664977956,
+          0.9672734436411202,
+          0.1656820451792507
+        ],
+        "Never seen in MIMIC-IV": [
+          0.9689893092175951,
+          0.9607095224876718,
+          0.9763250406471138,
+          0.30626686784112883
+        ]
+      },
+      "s7_itr_without_indicators": 0.9952584367594389,
+      "deferral_at_20_percent": {
+        "bootstrap": 0.5536270732115932,
+        "distance": 0.5333221645166695,
+        "oracle": 0.6701289998324678,
+        "random": 0.19832467750041882
+      },
+      "atypicality_spearman_patient": -0.06283648700011978,
+      "atypicality_spearman_hospital": -0.49376784206505564,
+      "true_itr_at_focus_n": 0.9759086879928959,
+      "bootstrap_itr_at_focus_n": 0.9820915977382715,
+      "bootstrap_ratio_external_at_focus_n": 1.0586118548345926,
+      "bootstrap_ratio_development_at_focus_n": 1.0385856192673455,
+      "flag_sensitivity_external_at_focus_n": 0.6811861283297034,
+      "flag_ppv_external_at_focus_n": 0.7826011253803179,
+      "deferral_at_bootstrap_flag_rate": {
+        "bootstrap": {
+          "deferred": 0.25982,
+          "capture": 0.6811861283297035,
+          "residual_per_1000": 128.2928206239136
+        },
+        "distance": {
+          "deferred": 0.25982,
+          "capture": 0.6593064164851734,
+          "residual_per_1000": 137.12568640028616
+        },
+        "oracle": {
+          "deferred": 0.25982,
+          "capture": 0.8705645836823589,
+          "residual_per_1000": 51.80450295307357
+        },
+        "random": {
+          "deferred": 0.25982,
+          "capture": 0.25743005528564245,
+          "residual_per_1000": 299.40743809833276
+        }
+      },
+      "decay_exponent_development": 0.11403914019130197,
+      "decay_exponent_external": 0.09504106404071172,
+      "policy_passed": false
+    },
+    "hgb": {
+      "external_auroc": [
+        0.8390223660325833,
+        0.8324694465016563,
+        0.8459998151302854
+      ],
+      "external_oe": [
+        0.7497252971523598,
+        0.7067813548272913,
+        0.7930425521932788
+      ],
+      "external_slope": [
+        0.930384964550842,
+        0.9075633911844722,
+        0.9566056957294871
+      ],
+      "development_auroc_oob": 0.8794498066468983,
+      "itr": [
+        1.1031062513933372,
+        1.0927289879893016,
+        1.1160290494106255
+      ],
+      "unstable_per_1000_development": 149.65220437371764,
+      "unstable_per_1000_external": 227.1075504175787,
+      "hospital_auroc_pi": [
+        0.8356696013611575,
+        0.790633166173776,
+        0.8725796401353998
+      ],
+      "hospital_oe_pi": [
+        0.6889800727897784,
+        0.39133061499660265,
+        1.2130242881853985
+      ],
+      "hospital_itr_pi": [
+        1.1049439123731344,
+        0.9826284837663217,
+        1.2424848960319683
+      ],
+      "decision_instability_ratio": [
+        1.0942210090961932,
+        1.0823696087830101,
+        1.1077554929374216
+      ],
+      "calibrated_hospitals_with_excess_instability": [
+        9,
+        47
+      ],
+      "hospitals_with_excess_instability": [
+        28,
+        152
+      ],
+      "spearman_calibration_vs_instability": 0.09179259016258996,
+      "itr_by_missingness_pattern": {
+        "Common in MIMIC-IV (1% or more)": [
+          1.042386978116013,
+          1.0343489707478515,
+          1.050896566026875,
+          0.4092589837856217
+        ],
+        "Uncommon (0.1% to 1%)": [
+          1.0915057352730297,
+          1.0837214605026175,
+          1.1002722711413042,
+          0.11879210319399877
+        ],
+        "Rare (under 0.1%)": [
+          1.122730672109972,
+          1.0933515384631358,
+          1.1574196440821243,
+          0.1656820451792507
+        ],
+        "Never seen in MIMIC-IV": [
+          1.1611348421965435,
+          1.1399753846506717,
+          1.1831366926240003,
+          0.30626686784112883
+        ]
+      },
+      "s7_itr_without_indicators": null,
+      "deferral_at_20_percent": {
+        "bootstrap": 0.45450896776621097,
+        "distance": 0.4141728333124295,
+        "oracle": 0.5016932145992725,
+        "random": 0.20010033864291987
+      },
+      "atypicality_spearman_patient": 0.07194486405558233,
+      "atypicality_spearman_hospital": 0.18545025665768697,
+      "true_itr_at_focus_n": 1.0313677594399544,
+      "bootstrap_itr_at_focus_n": 1.0234254472669004,
+      "bootstrap_ratio_external_at_focus_n": 0.9520877264840542,
+      "bootstrap_ratio_development_at_focus_n": 0.9505448289015943,
+      "flag_sensitivity_external_at_focus_n": 0.6156779129562273,
+      "flag_ppv_external_at_focus_n": 0.8705968466649212,
+      "deferral_at_bootstrap_flag_rate": {
+        "bootstrap": {
+          "deferred": 0.28196,
+          "capture": 0.6156779129562272,
+          "residual_per_1000": 212.88290270297134
+        },
+        "distance": {
+          "deferred": 0.28196,
+          "capture": 0.5610435218863665,
+          "residual_per_1000": 243.52587394810774
+        },
+        "oracle": {
+          "deferred": 0.28196,
+          "capture": 0.7072870939420545,
+          "residual_per_1000": 161.8699946123104
+        },
+        "random": {
+          "deferred": 0.28196,
+          "capture": 0.282077009908441,
+          "residual_per_1000": 398.60856156973625
+        }
+      },
+      "decay_exponent_development": 0.14010385427748553,
+      "decay_exponent_external": 0.11624364927292889,
+      "policy_passed": false
+    }
+  },
+  "multiplicity": [
+    {
+      "scenario": "Rashomon set, AUROC within 0.01",
+      "models": 5,
+      "reference": "hgb",
+      "vpr_median": 0.06593393534421921,
+      "vpr_p90": 0.2080207273364067,
+      "sample_range_median": 0.04657130556493434,
+      "sample_range_p90": 0.19443428216126815,
+      "model_ambiguous_per_1000": 266.8784665405785,
+      "sample_ambiguous_per_1000": 191.25050470705736,
+      "both_per_1000": 134.27332809146355,
+      "model_only_per_1000": 132.6051384491149,
+      "sample_only_per_1000": 53.700830907197656,
+      "either_per_1000": 320.57929744777607,
+      "discrepancy@0.1": 0.1758080625624243,
+      "discrepancy@0.2": 0.1159444928490979,
+      "discrepancy@0.3": 0.08047686847865355,
+      "ambiguity@0.1": 0.26687846654057845,
+      "ambiguity@0.2": 0.19301060416091123,
+      "ambiguity@0.3": 0.13003378880931635
+    },
+    {
+      "scenario": "Rashomon set, AUROC within 0.02",
+      "models": 8,
+      "reference": "hgb",
+      "vpr_median": 0.08050837129121646,
+      "vpr_p90": 0.26534029245376584,
+      "sample_range_median": 0.060724183169555385,
+      "sample_range_p90": 0.24885022104069388,
+      "model_ambiguous_per_1000": 333.8929383513611,
+      "sample_ambiguous_per_1000": 244.87855154387233,
+      "both_per_1000": 191.27866204815436,
+      "model_only_per_1000": 142.61427630320674,
+      "sample_only_per_1000": 54.572114669443444,
+      "either_per_1000": 388.46505302080453,
+      "discrepancy@0.1": 0.1758080625624243,
+      "discrepancy@0.2": 0.1159444928490979,
+      "discrepancy@0.3": 0.09030537433325542,
+      "ambiguity@0.1": 0.33389293835136113,
+      "ambiguity@0.2": 0.23799859744565102,
+      "ambiguity@0.3": 0.16170814119047114
+    },
+    {
+      "scenario": "Four pre-specified model classes",
+      "models": 4,
+      "reference": "hgb",
+      "vpr_median": 0.05483291885111253,
+      "vpr_p90": 0.20442236689030502,
+      "sample_range_median": 0.03987701112450759,
+      "sample_range_p90": 0.16924452224830552,
+      "model_ambiguous_per_1000": 271.3730157043586,
+      "sample_ambiguous_per_1000": 167.4564889389464,
+      "both_per_1000": 121.66096436236904,
+      "model_only_per_1000": 149.7120513419895,
+      "sample_only_per_1000": 39.52653165310156,
+      "either_per_1000": 310.8995473574601,
+      "discrepancy@0.1": 0.15794674543638565,
+      "discrepancy@0.2": 0.11266124062307414,
+      "discrepancy@0.3": 0.0751960388465053,
+      "ambiguity@0.1": 0.27137301570435857,
+      "ambiguity@0.2": 0.15884990543383556,
+      "ambiguity@0.3": 0.10752916675521176
+    }
+  ]
+}

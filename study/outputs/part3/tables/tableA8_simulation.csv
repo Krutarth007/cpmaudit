@@ -1,0 +1,16 @@
+scenario,model,itr,itr_lower,itr_upper,auroc,oe,slope,true_itr,bootstrap_over_true_itr,bias,itr_sd_across_replicates,replicates,bias_mcse,relative_bias_percent
+No shift,"GBM, native missing values",1.0032,0.9948,1.0122,0.8512,1.0439,0.7451,0.9931,1.0102,0.0102,0.0046,50,0.0006,1.0237
+No shift,"LR, imputation only",0.9999,0.989,1.0091,0.8713,1.006,0.9866,0.9874,1.0127,0.0125,0.0056,50,0.0008,1.2661
+No shift,LR + missingness indicator,0.9993,0.9847,1.0128,0.8711,1.0062,0.9842,0.9893,1.0101,0.01,0.0097,50,0.0014,1.0126
+Case-mix shift,"GBM, native missing values",1.0395,1.017,1.0601,0.8358,1.0379,0.7275,1.0401,0.9994,-0.0006,0.0096,50,0.0014,-0.0573
+Case-mix shift,"LR, imputation only",1.103,1.0606,1.1377,0.8606,0.993,0.9832,1.0846,1.017,0.0184,0.0213,50,0.003,1.7
+Case-mix shift,LR + missingness indicator,1.1058,1.0698,1.153,0.8603,0.9936,0.9794,1.0884,1.0159,0.0173,0.0255,50,0.0036,1.592
+Missingness shift,"GBM, native missing values",1.0783,1.0496,1.1151,0.8343,1.0662,0.7211,1.0753,1.0028,0.003,0.0196,50,0.0028,0.2796
+Missingness shift,"LR, imputation only",1.0022,0.9901,1.0163,0.8603,1.0778,1.0104,0.9947,1.0075,0.0074,0.0075,50,0.0011,0.7482
+Missingness shift,LR + missingness indicator,1.838,1.6262,2.168,0.856,1.0275,0.9877,1.8154,1.0125,0.0227,0.1638,50,0.0232,1.2484
+Outcome-rate shift,"GBM, native missing values",1.004,0.9948,1.0133,0.8446,1.4841,0.7365,0.993,1.011,0.0109,0.0056,50,0.0008,1.1013
+Outcome-rate shift,"LR, imputation only",1.0,0.9902,1.0133,0.8658,1.4326,0.9833,0.9848,1.0155,0.0152,0.0072,50,0.001,1.5481
+Outcome-rate shift,LR + missingness indicator,1.0003,0.9809,1.0192,0.8656,1.4328,0.9802,0.9813,1.0194,0.0191,0.011,50,0.0016,1.9427
+Predictor-effect shift,"GBM, native missing values",1.0033,0.9926,1.013,0.8208,0.9059,0.6288,0.9997,1.0037,0.0037,0.0047,50,0.0007,0.3656
+Predictor-effect shift,"LR, imputation only",0.9997,0.9896,1.0112,0.8393,0.8754,0.8134,0.9903,1.0096,0.0095,0.006,50,0.0009,0.9552
+Predictor-effect shift,LR + missingness indicator,1.0,0.9845,1.0176,0.8391,0.8755,0.8113,0.9913,1.0087,0.0087,0.0094,50,0.0013,0.8746

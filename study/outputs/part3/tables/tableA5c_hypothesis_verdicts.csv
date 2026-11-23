@@ -1,0 +1,13 @@
+hypothesis,model,supported,evidence
+H1 reverse smaller than forward,Logistic regression,True,reverse 1.05 (1.04 to 1.05); forward 3.16 (2.83 to 3.50)
+H1 reverse smaller than forward,Ridge logistic regression,True,reverse 1.06 (1.05 to 1.07); forward 2.86 (2.61 to 3.15)
+H2 temporal ratio within 0.8 to 1.25,Logistic regression,True,1.00 (0.98 to 1.01)
+H2 temporal ratio within 0.8 to 1.25,Ridge logistic regression,True,1.01 (0.99 to 1.02)
+H2 temporal ratio within 0.8 to 1.25,Random forest,True,1.01 (1.00 to 1.01)
+H2 temporal ratio within 0.8 to 1.25,Gradient boosting,True,1.01 (1.00 to 1.02)
+H3 rare or unseen patterns above common,Logistic regression (Forward: MIMIC-IV to eICU-CRD),True,"common 1.09; rare or unseen 4.53, 5.25"
+H3 rare or unseen patterns above common,Ridge logistic regression (Forward: MIMIC-IV to eICU-CRD),True,"common 1.08; rare or unseen 4.04, 4.59"
+H3 rare or unseen patterns above common,Logistic regression (Reverse: eICU-CRD to MIMIC-IV),True,"common 0.95; rare or unseen 1.20, 1.73"
+H3 rare or unseen patterns above common,Ridge logistic regression (Reverse: eICU-CRD to MIMIC-IV),True,"common 0.95; rare or unseen 1.25, 1.78"
+H3 rare or unseen patterns above common,Logistic regression (Temporal: MIMIC-IV earlier to 2017 - 2019),True,common 0.94; rare or unseen 2.46
+H3 rare or unseen patterns above common,Ridge logistic regression (Temporal: MIMIC-IV earlier to 2017 - 2019),True,common 0.95; rare or unseen 2.46

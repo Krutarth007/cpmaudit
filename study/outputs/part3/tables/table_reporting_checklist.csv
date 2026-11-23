@@ -1,0 +1,33 @@
+item,topic,where addressed
+TRIPOD+AI 1,Title,"manuscript: development and external evaluation, ICU mortality, individual-level instability"
+TRIPOD+AI 2,Abstract,manuscript (TRIPOD+AI for Abstracts); numbers from results_digest.json
+TRIPOD+AI 3,"Background, health inequalities",manuscript; notebook 2 subgroup and equity analyses
+TRIPOD+AI 4,Objectives,notebook 1 introduction; notebook 2 and 3 aims
+TRIPOD+AI 5,"Data sources, dates, representativeness","notebook 1 sections on data sources, calendar period, case-mix (Figures 3, S1)"
+TRIPOD+AI 6,"Participants, setting, eligibility, treatments","notebook 1 study flow (Figure 1), eligibility rules, landmark design"
+TRIPOD+AI 7,Data preparation and quality checks,"notebook 1 harmonisation, plausibility limits, unit conversion"
+TRIPOD+AI 8,Outcome definition and blinding,notebook 1 outcome definitions (hospital mortality; ICU stay 7 days or more)
+TRIPOD+AI 9,"Predictors: choice, definition, measurement",notebook 1 predictor dictionary; analysis_spec.json
+TRIPOD+AI 10,Study size,notebook 2 analytic minimum sample size and multiverse sizes; notebook 3 Table 13b
+TRIPOD+AI 11,Missing data,notebook 1 missingness (Figure 2); grouped missingness indicators; GCS sensitivity S4a/S4b
+TRIPOD+AI 12,"Analytical methods, internal validation, heterogeneity, updating, how predictions were computed","notebook 2 model specification, bootstrap/OOB/.632+; notebook 3 sections 3 to 7 (cluster bootstrap, REML meta-analysis), S5 recalibration"
+TRIPOD+AI 13,Class imbalance,no rebalancing; risks used as estimated (stated in notebook 2)
+TRIPOD+AI 14,Fairness,notebook 2 subgroup instability and RSIR; notebook 3 external subgroups (Figure P3-6)
+TRIPOD+AI 15,Model output and thresholds,"risk probabilities; thresholds 0.10, 0.20, 0.30 pre-specified (notebook 2)"
+TRIPOD+AI 16,Training versus evaluation differences,notebook 1 case-mix comparison; notebook 3 membership model (Figure P3-5)
+TRIPOD+AI 17,Ethical approval,"manuscript: PhysioNet credentialed access, de-identified data, waiver"
+TRIPOD+AI 18,"Open science: funding, conflicts, protocol, registration, data and code sharing",manuscript; code on GitHub (Krutarth007); cpmaudit on PyPI; data on PhysioNet under its data use agreements
+TRIPOD+AI 19,Patient and public involvement,manuscript
+TRIPOD+AI 20,"Participants: flow, characteristics, development versus evaluation",notebook 1 Figure 1 and Table 1
+TRIPOD+AI 21,Numbers of participants and events in each analysis,"notebook 2 and 3 tables (n, events per analysis)"
+TRIPOD+AI 22,Full model specification,"notebook 2 model specification and logistic equation (Table S, equation)"
+TRIPOD+AI 23,"Model performance with CIs, subgroups, clusters","notebook 2 Table 2; notebook 3 Tables 9, 11 and Figures P3-1, P3-3, P3-S1"
+TRIPOD+AI 24,Model updating,notebook 3 S5 (recalibrated random forest)
+TRIPOD+AI 25,Interpretation,manuscript; results digest
+TRIPOD+AI 26,Limitations,notebook 3 section 17; manuscript
+TRIPOD+AI 27,"Usability in current care, input data quality, user expertise",notebook 3 deferral analysis and governance (sections 9 and 12)
+TRIPOD-Cluster,"Clusters: definition and number, participants per cluster",notebook 1 hospital funnel plot (Figure 5); notebook 3 Table 11
+TRIPOD-Cluster,Clustering in uncertainty estimates,"hospital-cluster bootstrap (notebook 3), patient-cluster bootstrap (S1)"
+TRIPOD-Cluster,"Cluster-specific performance and heterogeneity (tau, I-squared, prediction intervals)","notebook 3 Table 11, Figures P3-3, P3-S1, P3-S3"
+TRIPOD-Cluster,Exploring sources of heterogeneity,"notebook 3 atypicality and hospital characteristics (Figures P3-5, P3-6)"
+TRIPOD-Cluster,Sensitivity to cluster inclusion,S6 (hospitals with at least 50 stays)

@@ -1,0 +1,4 @@
+scenario,models,reference,members,vpr_median,vpr_p90,sample_range_median,sample_range_p90,model_ambiguous_per_1000,sample_ambiguous_per_1000,both_per_1000,model_only_per_1000,sample_only_per_1000,either_per_1000,discrepancy@0.1,discrepancy@0.2,discrepancy@0.3,ambiguity@0.1,ambiguity@0.2,ambiguity@0.3
+"Rashomon set, AUROC within 0.01",5,hgb,"rf_seed, rf_deep, hgb_main, hgb_fast, hgb_slow",0.0659,0.208,0.0466,0.1944,266.8785,191.2505,134.2733,132.6051,53.7008,320.5793,0.1758,0.1159,0.0805,0.2669,0.193,0.13
+"Rashomon set, AUROC within 0.02",8,hgb,"lr_spline, rf_main, rf_seed, rf_deep, rf_shallow, hgb_main, hgb_fast, hgb_slow",0.0805,0.2653,0.0607,0.2489,333.8929,244.8786,191.2787,142.6143,54.5721,388.4651,0.1758,0.1159,0.0903,0.3339,0.238,0.1617
+Four pre-specified model classes,4,hgb,"lr, ridge, rf, hgb",0.0548,0.2044,0.0399,0.1692,271.373,167.4565,121.661,149.7121,39.5265,310.8995,0.1579,0.1127,0.0752,0.2714,0.1588,0.1075

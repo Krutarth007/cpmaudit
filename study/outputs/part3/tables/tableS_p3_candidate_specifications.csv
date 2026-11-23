@@ -1,0 +1,13 @@
+key,class,specification,auroc_audit,log_loss_audit,calibration_slope_audit,auroc_external,oe_external,convergence_warnings,rashomon_0.01,rashomon_0.02
+lr_main,lr,"LR, as notebook 2",0.8522,0.2394,0.9719,0.7806,0.7789,0,False,False
+lr_noind,lr,"LR, no missingness indicators",0.8218,0.2531,0.9558,0.8205,0.9816,0,False,False
+lr_l1,lr,"LR, lasso (C = 0.05)",0.8536,0.2389,1.0241,0.8062,0.7223,0,False,False
+lr_spline,lr,"LR, cubic splines, ridge (C = 0.1)",0.8618,0.2339,1.0637,0.7892,0.7553,0,False,True
+ridge_main,ridge,"Ridge LR, as notebook 2",0.8527,0.239,0.991,0.7907,0.772,0,False,False
+rf_main,rf,"RF, as notebook 2",0.8706,0.2335,1.461,0.834,0.7768,0,False,True
+rf_seed,rf,"RF, as notebook 2, other seed",0.8711,0.2332,1.467,0.8345,0.7846,0,True,True
+rf_deep,rf,"RF, leaf 5, 33% features",0.8715,0.2275,1.1656,0.8281,0.6678,0,True,True
+rf_shallow,rf,"RF, 500 trees, leaf 50",0.8651,0.2392,1.5751,0.8283,0.8072,0,False,True
+hgb_main,hgb,"GBM, as notebook 2",0.8807,0.2212,0.9904,0.8363,0.7316,0,True,True
+hgb_fast,hgb,"GBM, rate 0.1, 150 iterations, 31 leaves",0.8766,0.2242,0.906,0.8317,0.7917,0,True,True
+hgb_slow,hgb,"GBM, rate 0.03, 500 iterations, 7 leaves",0.8785,0.2226,1.0583,0.8389,0.7281,0,True,True

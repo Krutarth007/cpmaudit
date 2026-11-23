@@ -1,0 +1,77 @@
+{
+  "model": "HistGradientBoostingClassifier",
+  "development_n": 39966,
+  "development_events": 3888,
+  "bootstrap": "simple",
+  "replicates": 200,
+  "instability_index": 0.023847725749726705,
+  "mape_p90": 0.07453266309363289,
+  "interval_width_median": 0.037367713754065335,
+  "thresholds": {
+    "0.1": {
+      "flagged_share": 0.2610969323925337,
+      "mean_cii": 0.05545989090727119,
+      "share_flip_prone": 0.15232948005804933
+    },
+    "0.2": {
+      "flagged_share": 0.14945203422909473,
+      "mean_cii": 0.04273532502627233,
+      "share_flip_prone": 0.1212030225691838
+    },
+    "0.3": {
+      "flagged_share": 0.09508081869589151,
+      "mean_cii": 0.03461842566181254,
+      "share_flip_prone": 0.09868388129910424
+    }
+  },
+  "package_version": "0.1.0",
+  "optimism_corrected": {
+    "auroc": 0.8999091220500021,
+    "calibration_slope": 1.0204807491681616,
+    "calibration_intercept": 0.03697677756995948,
+    "brier": 0.06182700511831825
+  },
+  "external_instability_index": 0.03220084471861188,
+  "policy_passed": false,
+  "policy_failed_checks": [
+    "instability_index",
+    "mape_p90",
+    "share_wide_interval",
+    "share_flip_prone@0.1",
+    "share_flip_prone@0.2",
+    "share_flip_prone@0.3",
+    "instability_index",
+    "mape_p90",
+    "share_wide_interval",
+    "share_flip_prone@0.1",
+    "share_flip_prone@0.2",
+    "share_flip_prone@0.3",
+    "abs_calibration_slope_optimism"
+  ],
+  "external_population": "eICU-CRD, 94114 patients, 205 hospitals",
+  "external_auroc": 0.8390223660325833,
+  "external_auroc_ci": [
+    0.8324694465016563,
+    0.8459998151302854
+  ],
+  "external_oe": 0.7497252971523598,
+  "hospital_auroc_prediction_interval": [
+    0.790633166173776,
+    0.8725796401353998
+  ],
+  "hospital_oe_prediction_interval": [
+    0.39133061499660265,
+    1.2130242881853985
+  ],
+  "instability_transport_ratio": [
+    1.1031062513933372,
+    1.0927289879893016,
+    1.1160290494106255
+  ],
+  "external_deferral_workload_at_primary_threshold": 0.22710755041757869,
+  "decision_instability_ratio": [
+    1.0942210090961932,
+    1.0823696087830101,
+    1.1077554929374216
+  ]
+}
