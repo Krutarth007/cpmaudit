@@ -1,0 +1,17 @@
+# Exact environment used to produce the published study outputs (Python 3.11.5).
+# Install with:  pip install -r requirements.txt
+# The full list of installed packages is in study/outputs/part3/logs/environment_lock.txt.
+# To use the cpmaudit package on its own, "pip install cpmaudit" is enough.
+
+cpmaudit==0.1.0
+numpy==2.4.6
+pandas==3.1.1
+scipy==1.17.1
+scikit-learn==1.9.1
+joblib==1.6.0
+matplotlib==3.11.2
+duckdb==2.0.0
+pyarrow==26.0.1
+statsmodels==0.15.0
+ipykernel==7.4.0
+ipython==9.18.1

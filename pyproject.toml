@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cpmaudit"
+dynamic = ["version"]
+description = "Audit the instability and reliability of individual predictions from clinical risk models."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Krutarth Patel" }]
+keywords = [
+  "clinical prediction model", "risk prediction", "model stability", "bootstrap",
+  "uncertainty", "predictive multiplicity", "calibration", "TRIPOD+AI", "PROBAST+AI",
+  "model governance", "healthcare AI", "EHR",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Healthcare Industry",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "numpy>=1.21",
+  "pandas>=1.3",
+  "scipy>=1.7",
+  "scikit-learn>=1.0",
+  "joblib>=1.1",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.4"]
+data = ["duckdb>=0.9", "pyarrow>=10"]
+lowess = ["statsmodels>=0.13"]
+boosting = ["lightgbm>=3.3", "xgboost>=1.6"]
+all = ["matplotlib>=3.4", "duckdb>=0.9", "pyarrow>=10", "statsmodels>=0.13"]
+dev = ["pytest>=7", "pytest-cov", "ruff", "build", "twine", "matplotlib>=3.4", "duckdb>=0.9", "pyarrow>=10"]
+
+[project.scripts]
+cpmaudit = "cpmaudit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Krutarth007/cpmaudit"
+Documentation = "https://github.com/Krutarth007/cpmaudit/tree/main/docs"
+Issues = "https://github.com/Krutarth007/cpmaudit/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "cpmaudit._version.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cpmaudit = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 140
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501", "B008", "B023"]

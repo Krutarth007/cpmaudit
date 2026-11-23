@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or the study code, please cite it using these metadata."
+title: "cpmaudit: auditing the instability of individual predictions from clinical risk models"
+abstract: >-
+  A Python package that bootstraps the complete model-building process of a
+  binary-outcome clinical risk model to quantify individual-level prediction and
+  decision instability, calibration and clinical-utility instability,
+  optimism-corrected performance, predictive multiplicity, sample-size adequacy
+  and the transport of instability to external populations, with pre-agreed
+  stability policies for model governance. The repository also contains a fully
+  reproducible study of ICU mortality models developed in MIMIC-IV and evaluated
+  in 205 eICU-CRD hospitals, with SHA-256 provenance records for every output.
+type: software
+authors:
+  - family-names: Patel
+    given-names: Krutarth
+    orcid: "https://orcid.org/0009-0002-8748-8098"
+repository-code: "https://github.com/Krutarth007/cpmaudit"
+url: "https://pypi.org/project/cpmaudit/"
+license: MIT
+version: 0.1.0
+date-released: "2026-11-19"
+keywords:
+  - clinical prediction model
+  - model stability
+  - prediction instability
+  - bootstrap
+  - uncertainty
+  - predictive multiplicity
+  - calibration
+  - external validation
+  - transportability
+  - algorithmovigilance
+  - AI governance
+  - TRIPOD+AI
+  - MIMIC-IV
+  - eICU-CRD
+  - healthcare AI
